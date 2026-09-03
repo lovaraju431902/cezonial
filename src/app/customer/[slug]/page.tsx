@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Customer Details - App Development || NextSaaS',
+  title: 'Customer Details - App Development ||Cezonial Solutions',
 };
 
 const CustomerDetails = async ({ params }: { params: Promise<{ slug: string }> }) => {

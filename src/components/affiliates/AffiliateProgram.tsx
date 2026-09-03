@@ -14,7 +14,7 @@ const AffiliateProgram = () => {
               <h2>NextSaaS affiliate program</h2>
               <h3 className="text-heading-4">Earn up to $200 per referral!</h3>
               <p>
-                Become part of the NextSaaS family by joining our Affiliate Program. Help businesses grow while you earn
+                Become part of theCezonial Solutions family by joining our Affiliate Program. Help businesses grow while you earn
                 generous commissions — it’s a win-win!
               </p>
               <div className="mt-7 md:mt-14">
@@ -37,12 +37,12 @@ const AffiliateProgram = () => {
           </RevealAnimation>
           <div className="max-w-[830px] space-y-3">
             <RevealAnimation delay={0.3}>
-              <h4>Why join the NextSaaS affiliate program?</h4>
+              <h4>Why join theCezonial Solutions affiliate program?</h4>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p>
                 Our rapidly growing platform, high customer satisfaction, and strong renewal rates make promoting <br />
-                NextSaaS easy and profitable.
+                Cezonial Solutions easy and profitable.
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.5}>
@@ -66,7 +66,7 @@ const AffiliateProgram = () => {
                 </li>
                 <li className="text-tagline-1 text-secondary/60 dark:text-accent/60 before:bg-secondary dark:before:bg-accent font-normal before:relative before:left-0 before:mr-1 before:inline-block before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:content-['']">
                   <strong className="text-secondary dark:text-accent font-medium">Attractive lifetime deals: </strong>
-                  <span> Make it easier for your audience to invest and grow with NextSaaS. </span>
+                  <span> Make it easier for your audience to invest and grow withCezonial Solutions. </span>
                 </li>
               </ul>
             </RevealAnimation>

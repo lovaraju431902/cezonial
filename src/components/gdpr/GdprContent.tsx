@@ -65,7 +65,7 @@ const GdprContent = () => {
 
   // Data collection purposes
   const dataPurposes: ListItem[] = [
-    { id: 'account-management', text: 'To create and manage your NextSaaS account' },
+    { id: 'account-management', text: 'To create and manage yourCezonial Solutions account' },
     { id: 'order-processing', text: 'To process orders, generate invoices, and prevent fraudulent transactions' },
     { id: 'personalization', text: 'To improve your experience on our site through personalized content' },
     { id: 'analytics', text: 'To analyze site traffic and optimize marketing efforts' },
@@ -117,7 +117,7 @@ const GdprContent = () => {
                 applies to any company that handles the data of EU citizens, no matter where the company is based.
                 <br />
                 <br />
-                This page explains how NextSaaS implements GDPR principles and ensures that your data is handled
+                This page explains howCezonial Solutions implements GDPR principles and ensures that your data is handled
                 transparently, securely, and respectfully.
               </p>
             </div>
@@ -128,7 +128,7 @@ const GdprContent = () => {
               <div className="space-y-3">
                 <h3 className="text-heading-4">Purpose of this document</h3>
                 <p>
-                  At NextSaaS, we are fully committed to respecting your privacy. This page provides a clear overview
+                  AtCezonial Solutions, we are fully committed to respecting your privacy. This page provides a clear overview
                   of:
                 </p>
               </div>
@@ -148,21 +148,21 @@ const GdprContent = () => {
               <h3 className="text-heading-4">What is GDPR?</h3>
               <p>
                 In simple terms, GDPR gives you greater control over your personal information. Service providers (like
-                NextSaaS) must be transparent about what data they collect, how they use it, and how they share it — and
+                Cezonial Solutions) must be transparent about what data they collect, how they use it, and how they share it — and
                 users must have full rights to access, modify, or delete their data.
                 <br />
                 <br />
                 Although GDPR is an EU regulation, it affects any business that collects or processes the data of EU
-                residents, including NextSaaS.
+                residents, includingCezonial Solutions.
               </p>
             </div>
           </RevealAnimation>
-          {/* How NextSaaS Implements GDPR */}
+          {/* HowCezonial Solutions Implements GDPR */}
           <RevealAnimation delay={0.3}>
             <div className="space-y-3">
-              <h3 className="text-heading-4">How NextSaaS Implements GDPR</h3>
+              <h3 className="text-heading-4">HowCezonial Solutions Implements GDPR</h3>
               <p>
-                NextSaaS has always prioritized user data privacy, even before GDPR came into effect. Our core practices
+                Cezonial Solutions has always prioritized user data privacy, even before GDPR came into effect. Our core practices
                 naturally align with GDPR principles, and we&apos;ve made further improvements to ensure full
                 compliance.
               </p>

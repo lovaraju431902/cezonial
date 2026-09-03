@@ -15,7 +15,7 @@ const Services = () => {
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
-              <h2 className="mx-auto max-w-[810px]">Leading companies around the globe rely on NextSaaS.</h2>
+              <h2 className="mx-auto max-w-[810px]">Leading companies around the globe rely onCezonial Solutions.</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[542px]">
@@ -69,7 +69,7 @@ const Services = () => {
                 <div className="space-y-2 text-center">
                   <h3 className="text-heading-5">Support ticket</h3>
                   <p className="line-clamp-2">
-                    In-depth technical assistance submit a ticket for a personalized and detailed solution to your
+                    In-depth technical cezonal submit a ticket for a personalized and detailed solution to your
                     issue.
                   </p>
                 </div>

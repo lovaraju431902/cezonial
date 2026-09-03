@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="44" fill="#E03649"/>
+  <g fill="#FFFFFF" transform="translate(20, 30)">
+    <!-- Movie ticket icon & text -->
+    <path d="M25 20 C25 15 30 10 35 10 L125 10 C130 10 135 15 135 20 L135 45 C125 45 125 55 135 55 L135 80 C130 80 125 85 125 90 L35 90 C30 90 25 85 25 80 L25 55 C35 55 35 45 25 45 Z" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="55" cy="50" r="8" fill="#FFFFFF"/>
+    <circle cx="80" cy="50" r="8" fill="#FFFFFF"/>
+    <circle cx="105" cy="50" r="8" fill="#FFFFFF"/>
+    <text x="80" y="125" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="-0.5">bookmyshow</text>
+  </g>
+</svg>

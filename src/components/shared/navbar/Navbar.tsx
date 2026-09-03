@@ -85,13 +85,7 @@ const Navbar = () => {
                     <MenuComponent menuDropdownId={menuDropdownId} setMenuDropdownId={setMenuDropdownId} />
                   </li>
                 ))}
-                <li className="relative cursor-pointer py-2">
-                  <Link
-                    href="/case-study"
-                    className="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/70 hover:text-secondary dark:text-accent/70 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-medium transition-all duration-200">
-                    <span>Portfolio</span>
-                  </Link>
-                </li>
+
                 <li className="relative cursor-pointer py-2">
                   <Link
                     href="/process"

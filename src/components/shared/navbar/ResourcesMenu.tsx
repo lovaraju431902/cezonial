@@ -2,7 +2,6 @@
 import {
   AffiliatePolicyIcon,
   AnalyticsIcon,
-  CaseStudyICon,
   ChangeLogIcon,
   DocsIcon,
   FaqIcon,
@@ -58,12 +57,7 @@ const resourceSections: ResourceSection[] = [
         href: '/faq',
         icon: FaqIcon,
       },
-      {
-        title: 'Case Studies',
-        description: 'Real-world examples of how the product is used.',
-        href: '/case-study',
-        icon: CaseStudyICon,
-      },
+
       {
         title: 'Whitepapers',
         description: 'Detailed whitepapers on the product.',

@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Analytics - App Development || NextSaaS',
+  title: 'Analytics - App Development ||Cezonial Solutions',
 };
 
 const page = () => {
@@ -20,7 +20,7 @@ const page = () => {
         className="dark:bg-background-5 bg-white"
         badgeText="Get started"
         badgeClass="!badge-cyan-v2"
-        ctaHeading="Build a complete website using the assistance"
+        ctaHeading="Build a complete website using the cezonal"
         description="Start your free trial today and see your ideas come to life easily and creatively."
         ctaBtnText="Get started"
         btnClass="hover:btn-secondary dark:hover:btn-accent"

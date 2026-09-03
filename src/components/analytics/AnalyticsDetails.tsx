@@ -52,7 +52,7 @@ const AnalyticsDetails = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
-                Every team has different goals. With NextSaaS, you can tailor dashboards by department, role, or
+                Every team has different goals. WithCezonial Solutions, you can tailor dashboards by department, role, or
                 individual needs.
               </p>
             </RevealAnimation>
@@ -170,7 +170,7 @@ const AnalyticsDetails = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="text-secondary/60">
-                Nextsaas connects seamlessly with the tools you already use, so all your insights live in one place.
+                Cezonial Solutions connects seamlessly with the tools you already use, so all your insights live in one place.
               </p>
             </RevealAnimation>
           </div>

@@ -25,7 +25,7 @@ const testimonialsData: TestimonialData[] = [
     position: 'Graphic Designer',
     avatar: avatar1,
     quote:
-      'This platform transformed my creative process. The intuitive design tools and AI assistance helped me create stunning visuals in half the time.',
+      'This platform transformed my creative process. The intuitive design tools and AI cezonal helped me create stunning visuals in half the time.',
     xUrl: 'https://x.com/',
   },
   {

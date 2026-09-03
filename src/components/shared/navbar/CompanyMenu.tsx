@@ -34,9 +34,9 @@ const companyLinks: CompanyLink[] = [
     icon: FeatureIcon,
   },
   {
-    title: 'Client Case Studies',
-    description: 'Explore our portfolio and proven project results',
-    href: '/case-study',
+    title: 'Contact Us',
+    description: 'Get in touch for consultations and project quotes',
+    href: '/contact-us',
     icon: BlogIcon,
   },
 ];

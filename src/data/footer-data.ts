@@ -6,7 +6,6 @@ export const footerLinks: FooterData[] = [
     links: [
       { label: 'About Us', href: '/about' },
       { label: 'Our Process', href: '/process' },
-      { label: 'Case Studies / Portfolio', href: '/case-study' },
       { label: 'Pricing Plans', href: '/pricing' },
       { label: 'Contact Us', href: '/contact-us' },
     ],

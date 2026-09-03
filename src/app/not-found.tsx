@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: '404 - App Development || NextSaaS',
+  title: '404 - App Development ||Cezonial Solutions',
 };
 
 const page = () => {

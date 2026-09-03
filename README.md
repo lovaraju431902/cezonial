@@ -1,4 +1,4 @@
-# App Development || NextSaas
+# App Development ||Cezonial Solutions
 
 A comprehensive, modern Next.js 16 application development platform with complete business pages and features. Built with React 19, TypeScript, Tailwind CSS 4, and cutting-edge web technologies for modern web applications, businesses, and startups.
 
@@ -594,7 +594,7 @@ We provide comprehensive support for all our customers:
 - **Email Support**: [hello@pixel71.com](mailto:hello@pixel71.com)
 - **Response Time**: Within 24 hours on business days
 - **Support Includes**:
-  - Installation assistance
+  - Installation cezonal
   - Bug fixes and troubleshooting
   - Customization guidance
   - Feature clarifications

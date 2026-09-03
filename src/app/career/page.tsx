@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Career - App Development || NextSaaS',
+  title: 'Career - App Development ||Cezonial Solutions',
 };
 
 const Career = () => {
@@ -20,7 +20,7 @@ const Career = () => {
         className="dark:bg-background-6 bg-white"
         badgeClass="badge-green"
         badgeText="Get Started"
-        ctaHeading="Ready to start earning with NextSaaS?"
+        ctaHeading="Ready to start earning withCezonial Solutions?"
         description="If you have any questions, feel free to reach out to our team."
         btnClass="hover:btn-secondary dark:hover:btn-accent"
         ctaBtnText="Get started"

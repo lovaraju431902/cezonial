@@ -8,7 +8,6 @@ export const mobileMenuData: MobileMenuGroup[] = [
     submenu: [
       { id: 'about-us', label: 'About Us', href: '/about' },
       { id: 'our-process', label: 'Our Process', href: '/process' },
-      { id: 'case-studies', label: 'Case Studies / Portfolio', href: '/case-study' },
       { id: 'pricing', label: 'Pricing Plans', href: '/pricing' },
       { id: 'contact', label: 'Contact Us', href: '/contact-us' },
     ],
@@ -28,7 +27,6 @@ export const mobileMenuData: MobileMenuGroup[] = [
     id: 'resources',
     title: 'Resources',
     submenu: [
-      { id: 'portfolio', label: 'Case Studies', href: '/case-study' },
       { id: 'faq', label: 'FAQs', href: '/faq' },
       { id: 'contact-us', label: 'Book Consultation', href: '/contact-us' },
     ],
@@ -41,7 +39,6 @@ export const footerData: FooterOneData[] = [
     links: [
       { label: 'About Us', href: '/about' },
       { label: 'Career', href: '/career' },
-      { label: 'Case Studies', href: '/case-study' },
       { label: 'Contact Us', href: '/contact-us' },
     ],
   },

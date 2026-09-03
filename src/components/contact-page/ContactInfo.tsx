@@ -52,7 +52,7 @@ const ContactInfo = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p>
-                Whether you have a question, need technical assistance, or just want some guidance, our support team is
+                Whether you have a question, need technical cezonal, or just want some guidance, our support team is
                 here to help. We&apos;re available around the clock to provide quick and friendly support.
               </p>
             </RevealAnimation>

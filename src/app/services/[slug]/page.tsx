@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Services Details - App Development || NextSaaS',
+  title: 'Services Details - App Development ||Cezonial Solutions',
 };
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
@@ -26,7 +26,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
         className="dark:bg-background-6 bg-white"
         badgeClass="hidden"
         ctaHeading="Build a complete website using the"
-        spanText="assistance"
+        spanText="cezonal"
         description="Start your free trial today and see your ideas come to life easily and creatively."
         btnClass="hover:btn-secondary dark:hover:btn-accent"
         ctaBtnText="Get started"

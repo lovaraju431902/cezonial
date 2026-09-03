@@ -1,11 +1,11 @@
 'use client';
 
-import figma from '@public/images/icons/figma.svg';
-import shopify from '@public/images/icons/shopify.svg';
-import slack from '@public/images/icons/slack.svg';
-import snapchat from '@public/images/icons/snapchat.svg';
-import tiktok from '@public/images/icons/tiktok.svg';
-import zapier from '@public/images/icons/zapier.svg';
+import bookmyshow from '@public/images/integrations/bookmyshow.svg';
+import instamart from '@public/images/integrations/instamart.png';
+import rapido from '@public/images/integrations/rapido.png';
+import swiggy from '@public/images/integrations/swiggy.png';
+import zepto from '@public/images/integrations/zepto.png';
+import zomato from '@public/images/integrations/zomato.svg';
 import gradient4 from '@public/images/ns-img-496.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,38 +13,34 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const integrations = [
   {
-    name: 'Zapier',
-    description: 'Communication',
-    icon: zapier,
+    name: 'Swiggy',
+    description: 'Food & Quick Commerce',
+    icon: swiggy,
   },
   {
-    name: 'Snapchat',
-    description: 'Messaging app',
-    icon: snapchat,
+    name: 'Zepto',
+    description: '10-Min Grocery Delivery',
+    icon: zepto,
   },
-
   {
-    name: 'Shopify',
-    description: 'e-commerce',
-    icon: shopify,
+    name: 'Rapido',
+    description: 'Bike Taxi & Auto Booking',
+    icon: rapido,
   },
-
   {
-    name: 'Figma',
-    description: 'Design tool',
-    icon: figma,
+    name: 'Instamart',
+    description: 'Instant Delivery Platform',
+    icon: instamart,
   },
-
   {
-    name: 'Slack',
-    description: 'Communication',
-    icon: slack,
+    name: 'Zomato',
+    description: 'Food Delivery & Dining',
+    icon: zomato,
   },
-
   {
-    name: 'Tiktok',
-    description: 'Video feed',
-    icon: tiktok,
+    name: 'BookMyShow',
+    description: 'Movies & Event Ticketing',
+    icon: bookmyshow,
   },
 ];
 
@@ -62,7 +58,9 @@ const Integration = () => {
                 <h2 className="dark:text-secondary">Tech stack &amp; tools.</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.4}>
-                <p className="dark:text-secondary mx-auto w-full max-w-[510px]">We work with the best technologies</p>
+                <p className="dark:text-secondary mx-auto w-full max-w-[510px]">
+                  Seamless integrations with leading industry platforms &amp; APIs
+                </p>
               </RevealAnimation>
             </div>
           </div>
@@ -72,11 +70,17 @@ const Integration = () => {
                 <RevealAnimation delay={0.5 + index * 0.1} key={integration.name}>
                   <div className="group">
                     <Link
-                      href="/integration"
+                      href="/services"
                       className="dark:bg-secondary/60 mx-2 flex scale-100 cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white p-4 transition-transform duration-500 hover:scale-[102%] hover:transition-transform hover:duration-500 sm:mx-0 sm:p-8">
                       <div className="flex items-center gap-4">
-                        <figure className="size-14 shrink-0 grow-0 transition-transform duration-500 group-hover:scale-[103%] group-hover:rotate-12">
-                          <Image src={integration.icon} alt={integration.name} className="size-14 object-contain" style={{ width: 'auto', height: 'auto' }} />
+                        <figure className="size-14 shrink-0 grow-0 overflow-hidden rounded-2xl shadow-sm transition-transform duration-500 group-hover:scale-[105%] group-hover:rotate-6">
+                          <Image
+                            src={integration.icon}
+                            alt={integration.name}
+                            className="size-full object-cover"
+                            width={56}
+                            height={56}
+                          />
                         </figure>
                         <div className="shrink-0 grow-0 transform transition-transform duration-500 group-hover:translate-x-1.5">
                           <h5>{integration.name}</h5>

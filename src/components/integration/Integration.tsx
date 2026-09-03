@@ -1,11 +1,12 @@
 import { ArrowIcon } from '@/icons';
-import figmaLogo from '@public/images/icons/figma.svg';
-import shopifyLogo from '@public/images/icons/shopify.svg';
-import slackLogo from '@public/images/icons/slack.svg';
-import snapchatLogo from '@public/images/icons/snapchat.svg';
-import tiktokLogo from '@public/images/icons/tiktok.svg';
-import zapierLogo from '@public/images/icons/zapier.svg';
+import bookmyshowLogo from '@public/images/integrations/bookmyshow.svg';
+import instamartLogo from '@public/images/integrations/instamart.png';
+import rapidoLogo from '@public/images/integrations/rapido.png';
+import swiggyLogo from '@public/images/integrations/swiggy.png';
+import zeptoLogo from '@public/images/integrations/zepto.png';
+import zomatoLogo from '@public/images/integrations/zomato.svg';
 import integrationBg from '@public/images/ns-img-24.png';
+import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
@@ -13,7 +14,7 @@ import LinkButton from '../ui/button/LinkButton';
 
 interface Integration {
   id: string;
-  logo: string;
+  logo: StaticImageData | string;
   title: string;
   description: string;
   href: string;
@@ -21,46 +22,46 @@ interface Integration {
 
 const integrations: Integration[] = [
   {
-    id: 'zapier',
-    logo: zapierLogo,
-    title: 'Zapier',
-    description: 'Communication',
-    href: '/pricing',
+    id: 'swiggy',
+    logo: swiggyLogo,
+    title: 'Swiggy',
+    description: 'Food & Quick Commerce',
+    href: '/services',
   },
   {
-    id: 'snapchat',
-    logo: snapchatLogo,
-    title: 'Snapchat',
-    description: 'Messaging App',
-    href: '/pricing',
+    id: 'zepto',
+    logo: zeptoLogo,
+    title: 'Zepto',
+    description: '10-Min Grocery Delivery',
+    href: '/services',
   },
   {
-    id: 'shopify',
-    logo: shopifyLogo,
-    title: 'Shopify',
-    description: 'e-commerce',
-    href: '/pricing',
+    id: 'rapido',
+    logo: rapidoLogo,
+    title: 'Rapido',
+    description: 'Bike Taxi & Auto Booking',
+    href: '/services',
   },
   {
-    id: 'figma',
-    logo: figmaLogo,
-    title: 'Figma',
-    description: 'Design Tool',
-    href: '/pricing',
+    id: 'instamart',
+    logo: instamartLogo,
+    title: 'Instamart',
+    description: 'Instant Delivery Platform',
+    href: '/services',
   },
   {
-    id: 'slack',
-    logo: slackLogo,
-    title: 'Slack',
-    description: 'Communication',
-    href: '/pricing',
+    id: 'zomato',
+    logo: zomatoLogo,
+    title: 'Zomato',
+    description: 'Food Delivery & Dining',
+    href: '/services',
   },
   {
-    id: 'tiktok',
-    logo: tiktokLogo,
-    title: 'Tiktok',
-    description: 'Video Tool',
-    href: '/pricing',
+    id: 'bookmyshow',
+    logo: bookmyshowLogo,
+    title: 'BookMyShow',
+    description: 'Movies & Event Ticketing',
+    href: '/services',
   },
 ];
 
@@ -75,14 +76,14 @@ const Integration = () => {
           <div className="mx-auto max-w-[850px]">
             <div className="mb-14 flex flex-col items-center gap-y-3 text-center md:mb-[70px]">
               <RevealAnimation delay={0.1}>
-                <span className="badge badge-blur text-ns-cyan mb-5">Integration</span>
+                <span className="badge badge-blur text-ns-cyan mb-5">Integrations</span>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <h2 className="text-accent mx-auto max-w-[750px]">Link up with your favorite tools.</h2>
+                <h2 className="text-accent mx-auto max-w-[750px]">Link up with your favorite platforms.</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="text-accent/60 max-w-[510px]">
-                  We assist startups in standing out with exceptional messaging that effectively engages their audience.
+                  Seamlessly connect and integrate your applications with leading consumer, delivery, and ticketing platforms.
                 </p>
               </RevealAnimation>
             </div>
@@ -94,8 +95,8 @@ const Integration = () => {
                       href={integration.href}
                       className="group-hover:shadow-1 flex justify-between rounded-[20px] bg-white/14 p-4 transition-all duration-500 ease-in-out group-hover:scale-[102%] md:p-4 lg:p-8">
                       <div className="flex items-center gap-4">
-                        <div className="shrink-0 grow-0 rounded-lg bg-white transition-transform duration-500 group-hover:scale-[103%] group-hover:rotate-12">
-                          <Image src={integration.logo} alt={`${integration.title} Logo`} width={56} height={56} />
+                        <div className="size-14 shrink-0 grow-0 overflow-hidden rounded-2xl bg-white shadow-sm transition-transform duration-500 group-hover:scale-[105%] group-hover:rotate-6">
+                          <Image src={integration.logo} alt={`${integration.title} Logo`} width={56} height={56} className="size-full object-cover" />
                         </div>
                         <div className="transform transition-transform duration-500 group-hover:translate-x-1.5">
                           <h5 className="text-accent">{integration.title}</h5>

@@ -22,7 +22,7 @@ const AboutCTA = () => {
               description="Start your free trial today and see your ideas come to life easily and creatively."
               headingClass="text-accent"
               descriptionClass="text-accent/60"
-              ctaHeading="  Build a complete website using the assistance"
+              ctaHeading="  Build a complete website using the cezonal"
               ctaBtnText="Get started"
               badgeText="Get started"
               badgeClass="badge badge-blur text-ns-green"

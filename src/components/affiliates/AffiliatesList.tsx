@@ -43,8 +43,8 @@ const affiliateSectionsData: AffiliateSection[] = [
     items: [
       'Spam links in irrelevant discussions',
       'Use incorrect URLs or expired promotional methods',
-      'Spread false or exaggerated information about NextSaaS',
-      'Promote NextSaaS alongside direct competitors',
+      'Spread false or exaggerated information aboutCezonial Solutions',
+      'PromoteCezonial Solutions alongside direct competitors',
       'List our deals on coupon/discount-only websites',
     ],
   },
@@ -62,9 +62,8 @@ const AffiliatesList = () => {
               {section.items.map((item, itemIndex) => (
                 <li
                   key={itemIndex}
-                  className={`text-tagline-1 text-secondary/60 dark:text-accent/60 before:relative before:left-0 before:mr-3 before:h-5 before:w-5 before:content-[url('/images/icons/checkmark-white.svg')] before:max-md:top-0 dark:before:content-[url('/images/icons/checkmark-white.svg')] before:md:top-1${
-                    itemIndex === 0 ? 'before:inline-block' : ''
-                  }`}>
+                  className={`text-tagline-1 text-secondary/60 dark:text-accent/60 before:relative before:left-0 before:mr-3 before:h-5 before:w-5 before:content-[url('/images/icons/checkmark-white.svg')] before:max-md:top-0 dark:before:content-[url('/images/icons/checkmark-white.svg')] before:md:top-1${itemIndex === 0 ? 'before:inline-block' : ''
+                    }`}>
                   {item}
                 </li>
               ))}

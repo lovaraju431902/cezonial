@@ -18,13 +18,13 @@ const contentSections: ContentSection[] = [
     id: '1',
     title: 'Customer trust comes first',
     description:
-      "At NextSaaS, protecting your data is more than a promise it's a foundation. Every product decision starts with one question: Is this secure for our customers? We take your privacy, integrity, and business data protection seriously.",
+      "AtCezonial Solutions, protecting your data is more than a promise it's a foundation. Every product decision starts with one question: Is this secure for our customers? We take your privacy, integrity, and business data protection seriously.",
   },
   {
     id: '2',
     title: 'Built for enterprise-grade security',
     description:
-      "Our infrastructure is designed with end-to-end encryption, zero-trust access, and multi-layer defense systems that meet modern compliance standards. Whether you're a startup or global enterprise, NextSaaS ensures your operations run safely and confidently.",
+      "Our infrastructure is designed with end-to-end encryption, zero-trust access, and multi-layer defense systems that meet modern compliance standards. Whether you're a startup or global enterprise,Cezonial Solutions ensures your operations run safely and confidently.",
   },
   {
     id: '3',

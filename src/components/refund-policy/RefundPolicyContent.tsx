@@ -22,12 +22,12 @@ const policySections: PolicySection[] = [
   {
     title: 'Return and refund guidelines',
     content:
-      'At NextSaaS, we are committed to providing you with the best possible service and experience. However, if for any reason our platform does not meet your expectations, we offer a simple and hassle-free refund policy.',
+      'AtCezonial Solutions, we are committed to providing you with the best possible service and experience. However, if for any reason our platform does not meet your expectations, we offer a simple and hassle-free refund policy.',
   },
   {
     title: '14-Day money-back guarantee',
     content:
-      'We are confident that you will love using NextSaaS. Still, if you are not fully satisfied, we offer a full refund within 14 days of your original purchase — no questions asked.',
+      'We are confident that you will love usingCezonial Solutions. Still, if you are not fully satisfied, we offer a full refund within 14 days of your original purchase — no questions asked.',
   },
 ];
 
@@ -37,7 +37,7 @@ const refundSteps: RefundStep[] = [
     color: 'bg-ns-yellow',
     title: 'Submit a support ticket through our [Contact Page].',
     description:
-      "If you're experiencing any issues or need assistance, our support team is here to help. Simply visit our [Contact Page] and fill out the support ticket form with the relevant details.",
+      "If you're experiencing any issues or need cezonal, our support team is here to help. Simply visit our [Contact Page] and fill out the support ticket form with the relevant details.",
   },
   {
     step: 2,
@@ -88,7 +88,7 @@ const additionalSections: PolicySection[] = [
   {
     title: 'We appreciate your feedback',
     content:
-      'If you choose to request a refund, we would be grateful if you could let us know why. Your feedback helps us improve NextSaaS for future users!',
+      'If you choose to request a refund, we would be grateful if you could let us know why. Your feedback helps us improveCezonial Solutions for future users!',
   },
 ];
 

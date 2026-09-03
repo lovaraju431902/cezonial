@@ -91,7 +91,7 @@ const SpotlightStories = () => {
                 </p>
                 <div className="w-[90%] md:w-auto">
                   <LinkButton
-                    href="case-study/ai-powered-patient-care-solutions-in-healthcare"
+                    href="/customer"
                     className="btn btn-secondary hover:btn-primary dark:btn-accent dark:hover:btn-primary btn-lg mx-auto w-full md:mx-0 md:w-auto">
                     Read now
                   </LinkButton>

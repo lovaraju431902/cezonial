@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Security - App Development || NextSaaS',
+  title: 'Security - App Development ||Cezonial Solutions',
 };
 
 const page = () => {
