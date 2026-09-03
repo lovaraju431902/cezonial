@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 export const DEFAULT_URL = 'https://cezonialsolutions.netlify.app/';
 export const DEFAULT_TITLE = 'Cezonal Solutions Pvt Ltd - Mobile & Web App Development';
 export const DEFAULT_DESCRIPTION =
-  'Cezonal Solutions Pvt Ltd is a premier software development agency delivering high-performance mobile apps, web applications, and custom enterprise software solutions.';
-export const DEFAULT_IMAGE_URL = 'https://cezonialsolutions.netlify.app/opengraph-image';
+  'Premier software development agency delivering high-performance mobile apps, custom web applications, and enterprise software solutions.';
+export const DEFAULT_IMAGE_URL = 'https://cezonialsolutions.netlify.app/opengraph-image.png';
 
 const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),
@@ -23,13 +23,21 @@ const defaultMetadata: Metadata = {
     url: DEFAULT_URL,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: [{ url: DEFAULT_IMAGE_URL, width: 1200, height: 630, alt: 'Cezonal Solutions Pvt Ltd' }],
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        type: 'image/png',
+        alt: 'Cezonal Solutions Pvt Ltd',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: [DEFAULT_IMAGE_URL],
+    images: ['/twitter-image.png'],
   },
 };
 
@@ -46,7 +54,9 @@ const generateMetadata = (title?: string, description?: string, canonicaUrl?: st
       title: title ?? defaultMetadata.openGraph?.title,
       description: description ?? defaultMetadata.openGraph?.description,
       url: canonicaUrl ?? defaultMetadata.openGraph?.url,
-      images: imageUrl ? [{ url: imageUrl, width: 1200, height: 630 }] : defaultMetadata.openGraph?.images,
+      images: imageUrl
+        ? [{ url: imageUrl, width: 1200, height: 630, type: 'image/png', alt: title ?? 'Cezonal Solutions' }]
+        : defaultMetadata.openGraph?.images,
     },
     twitter: {
       ...defaultMetadata.twitter,
