@@ -10,6 +10,13 @@ const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),
   title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
+  icons: {
+    icon: [
+      { url: '/images/shared/logo.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/images/shared/logo.svg',
+    apple: '/images/shared/logo.svg',
+  },
   openGraph: {
     type: 'website',
     siteName: 'Cezonal Solutions Pvt Ltd',

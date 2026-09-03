@@ -25,7 +25,7 @@ export const footerLinks: FooterData[] = [
     links: [
       { label: 'Frequently Asked Questions', href: '/faq' },
       { label: 'Tech Stack & Integrations', href: '/integration' },
-      { label: 'Privacy Policy', href: '/privacy-policy' },
+
       { label: 'Terms & Conditions', href: '/terms-conditions' },
     ],
   },

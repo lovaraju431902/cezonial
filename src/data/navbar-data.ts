@@ -55,7 +55,6 @@ export const footerData: FooterOneData[] = [
     title: 'Legal Policies',
     links: [
       { label: 'Terms & Conditions', href: '/terms-conditions' },
-      { label: 'Privacy Policy', href: '/privacy-policy' },
       { label: 'Refund Policy', href: '/refund-policy' },
       { label: 'GDPR Compliance', href: '/gdpr' },
       { label: 'Affiliate Policy', href: '/affiliate-policy' },
