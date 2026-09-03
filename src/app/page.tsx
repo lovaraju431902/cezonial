@@ -27,7 +27,9 @@ const page = () => {
       <WhatWeOffer />
       <Process />
       <WhyChooseUs />
-      <Features projects={featuredProjects} />
+
+      {/* <Features projects={featuredProjects} /> */}
+
       <Integration />
       <Pricing />
       <CTA />

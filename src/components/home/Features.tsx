@@ -5,11 +5,13 @@ import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
+type FeatureProject = Pick<ICaseStudy, 'title' | 'slug' | 'thumbnail' | 'result'> & Partial<ICaseStudy>;
+
 interface FeaturesProps {
-  projects?: ICaseStudy[];
+  projects?: FeatureProject[];
 }
 
-const defaultProjects: ICaseStudy[] = [
+const defaultProjects: FeatureProject[] = [
   {
     title: 'Mobile app development for a modern fintech company',
     slug: 'mobile-app-development-for-a-modern-fintech-company',
