@@ -68,6 +68,7 @@ const Navbar = () => {
                     onMouseEnter={() => handleMenuHover(dataMenu)}>
                     <button
                       type="button"
+                      suppressHydrationWarning
                       className="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/70 hover:text-secondary dark:text-accent/70 dark:hover:text-accent flex cursor-pointer items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-medium transition-all duration-200">
                       <span>{label}</span>
                       <span className="block origin-center translate-y-px transition-all duration-300 group-hover/item:rotate-180">

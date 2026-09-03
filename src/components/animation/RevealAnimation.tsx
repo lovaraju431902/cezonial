@@ -142,12 +142,23 @@ const RevealAnimation = ({
     return <>{children}</>;
   }
 
-  // Clone the child element and add the ref, className, and suppressHydrationWarning
-  return cloneElement(children, {
+  const childClassName = children.props?.className;
+  const combinedClassName = className ? cn(childClassName, className) : childClassName;
+
+  const newProps: {
+    ref: Ref<HTMLElement>;
+    className?: string;
+    suppressHydrationWarning: boolean;
+  } = {
     ref: elementRef,
-    className: cn(children?.props?.className, className),
     suppressHydrationWarning: true,
-  });
+  };
+
+  if (combinedClassName) {
+    newProps.className = combinedClassName;
+  }
+
+  return cloneElement(children, newProps);
 };
 
 export default RevealAnimation;
