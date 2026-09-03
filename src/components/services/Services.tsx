@@ -1,3 +1,5 @@
+
+
 import { IService } from '@/interface';
 import getMarkDownData from '@/utils/getMarkDownData';
 import RevealAnimation from '../animation/RevealAnimation';
@@ -11,7 +13,9 @@ const Services = () => {
       <div className="main-container">
         <div className="mb-[70px] space-y-5 text-center">
           <RevealAnimation delay={0.1} instant>
-            <span className="badge badge-yellow-v2">Our Services</span>
+            <div className="inline-block">
+              <span className="badge badge-yellow-v2">Our Services</span>
+            </div>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2} instant>

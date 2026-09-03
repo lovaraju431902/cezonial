@@ -37,13 +37,13 @@ const Navbar = () => {
       <header
         onMouseLeave={() => handleMenuHover(null)}
         className={cn(
-          'lp:!max-w-[1290px] fixed top-5 left-1/2 z-50 mx-auto w-full max-w-[350px] -translate-x-1/2 transition-all duration-500 min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]',
-          isScrolled && 'top-2',
+          'fixed top-5 left-1/2 z-50 mx-auto w-[92%] -translate-x-1/2 transition-all duration-500 max-w-[340px] min-[425px]:max-w-[375px] sm:max-w-[520px] md:max-w-[680px] lg:max-w-[820px] xl:max-w-[1100px]',
+          isScrolled && 'top-2.5',
         )}>
         <RevealAnimation direction="up" offset={100} delay={0.1} instant>
           <div
             className={cn(
-              'border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 mx-auto flex items-center justify-between rounded-full border px-4 py-2.5 xl:py-1.5 shadow-sm',
+              'border-stroke-2 dark:border-stroke-6 bg-accent/95 dark:bg-background-9/95 backdrop-blur-md mx-auto flex items-center justify-between rounded-full border px-4 py-2 xl:py-1.5 shadow-md',
             )}>
             <div className="flex items-center justify-center">
               <Link href="/" className="inline-flex items-center gap-2">

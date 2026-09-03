@@ -16,6 +16,7 @@ interface RevealAnimationProps {
     className?: string;
     ref?: Ref<HTMLElement>;
     'data-ns-animate'?: boolean;
+    suppressHydrationWarning?: boolean;
   }>;
   duration?: number;
   delay?: number;
@@ -136,15 +137,16 @@ const RevealAnimation = ({
     },
   );
 
-  // Early return if children is not valid
+  // Fallback return if children is not valid React element
   if (!children || !React.isValidElement(children)) {
-    return null;
+    return <>{children}</>;
   }
 
-  // Clone the child element and add the ref and className
+  // Clone the child element and add the ref, className, and suppressHydrationWarning
   return cloneElement(children, {
     ref: elementRef,
     className: cn(children?.props?.className, className),
+    suppressHydrationWarning: true,
   });
 };
 
