@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
-export const DEFAULT_URL = 'https://cezonial.com/';
+export const DEFAULT_URL = 'https://cezonialsolutions.netlify.app/';
 export const DEFAULT_TITLE = 'Cezonal Solutions Pvt Ltd - Mobile & Web App Development';
 export const DEFAULT_DESCRIPTION =
   'Cezonal Solutions Pvt Ltd is a premier software development agency delivering high-performance mobile apps, web applications, and custom enterprise software solutions.';
-export const DEFAULT_IMAGE_URL = 'https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg';
+export const DEFAULT_IMAGE_URL = 'https://cezonialsolutions.netlify.app/opengraph-image';
 
 const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),
@@ -23,7 +23,7 @@ const defaultMetadata: Metadata = {
     url: DEFAULT_URL,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: [{ url: DEFAULT_IMAGE_URL, width: 1200, height: 630 }],
+    images: [{ url: DEFAULT_IMAGE_URL, width: 1200, height: 630, alt: 'Cezonal Solutions Pvt Ltd' }],
   },
   twitter: {
     card: 'summary_large_image',

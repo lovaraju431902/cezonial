@@ -17,7 +17,7 @@ const page = () => {
       <Teams />
       <Experience />
       <Testimonial />
-      <Features />
+      {/* <Features /> */}
       <CTA />
     </main>
   );
