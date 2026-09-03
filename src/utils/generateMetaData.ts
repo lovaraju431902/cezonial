@@ -4,7 +4,7 @@ export const DEFAULT_URL = 'https://cezonialsolutions.netlify.app/';
 export const DEFAULT_TITLE = 'Cezonal Solutions Pvt Ltd - Mobile & Web App Development';
 export const DEFAULT_DESCRIPTION =
   'Premier software development agency delivering high-performance mobile apps, custom web applications, and enterprise software solutions.';
-export const DEFAULT_IMAGE_URL = 'https://cezonialsolutions.netlify.app/opengraph-image.png';
+export const DEFAULT_IMAGE_URL = 'https://cezonialsolutions.netlify.app/images/og-image.png';
 
 const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),
@@ -25,7 +25,7 @@ const defaultMetadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: [
       {
-        url: '/opengraph-image.png',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
         type: 'image/png',
@@ -37,7 +37,7 @@ const defaultMetadata: Metadata = {
     card: 'summary_large_image',
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: ['/twitter-image.png'],
+    images: ['/images/og-image.png'],
   },
 };
 
