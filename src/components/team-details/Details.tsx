@@ -8,7 +8,7 @@ const Details = ({ slug }: { slug: string }) => {
   const teamMemberData = getMarkDownContent('src/data/team/', slug);
 
   return (
-    <section className="pt-32 pb-[50px] sm:pt-36 md:pt-42 md:pb-[70px] lg:pb-[85px] xl:pt-[180px] xl:pb-[100px]">
+    <section className="pt-36 pb-[50px] sm:pt-40 md:pt-44 md:pb-[70px] lg:pb-[85px] xl:pt-[190px] xl:pb-[100px]">
       <div className="main-container">
         <div className="grid grid-cols-12 items-start gap-y-[70px] md:gap-x-8 md:gap-y-0 lg:gap-x-[70px]">
           {/* team member details   */}

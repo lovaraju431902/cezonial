@@ -93,6 +93,7 @@ export interface IContactInformation {
 export interface ITeamMember {
   name: string;
   role: string;
+  order?: number;
   userImg: string;
   contactInformation: IContactInformation;
   social: ISocialLinks;

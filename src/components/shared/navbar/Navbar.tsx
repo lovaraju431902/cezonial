@@ -99,13 +99,13 @@ const Navbar = () => {
                     <span>Process</span>
                   </Link>
                 </li>
-                <li className="relative cursor-pointer py-2">
+                {/* <li className="relative cursor-pointer py-2">
                   <Link
                     href="/pricing"
                     className="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/70 hover:text-secondary dark:text-accent/70 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-3.5 py-1.5 font-medium transition-all duration-200">
                     <span>Pricing</span>
                   </Link>
-                </li>
+                </li> */}
                 <li className="relative cursor-pointer py-2">
                   <Link
                     href="/contact-us"

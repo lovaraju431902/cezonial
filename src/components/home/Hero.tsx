@@ -1,15 +1,15 @@
 'use client';
 
-import ClientLogo1 from '@public/images/icons/client-logo-1.svg';
-import ClientLogo2 from '@public/images/icons/client-logo-2.svg';
-import ClientLogo3 from '@public/images/icons/client-logo-3.svg';
-import ClientLogo4 from '@public/images/icons/client-logo-4.svg';
-import ClientLogo5 from '@public/images/icons/client-logo-5.svg';
-import ClientLogoDark1 from '@public/images/icons/client-logo-dark-1.svg';
-import ClientLogoDark2 from '@public/images/icons/client-logo-dark-2.svg';
-import ClientLogoDark3 from '@public/images/icons/client-logo-dark-3.svg';
-import ClientLogoDark4 from '@public/images/icons/client-logo-dark-4.svg';
-import ClientLogoDark5 from '@public/images/icons/client-logo-dark-5.svg';
+// import ClientLogo1 from '@public/images/icons/client-logo-1.svg';
+// import ClientLogo2 from '@public/images/icons/client-logo-2.svg';
+// import ClientLogo3 from '@public/images/icons/client-logo-3.svg';
+// import ClientLogo4 from '@public/images/icons/client-logo-4.svg';
+// import ClientLogo5 from '@public/images/icons/client-logo-5.svg';
+// import ClientLogoDark1 from '@public/images/icons/client-logo-dark-1.svg';
+// import ClientLogoDark2 from '@public/images/icons/client-logo-dark-2.svg';
+// import ClientLogoDark3 from '@public/images/icons/client-logo-dark-3.svg';
+// import ClientLogoDark4 from '@public/images/icons/client-logo-dark-4.svg';
+// import ClientLogoDark5 from '@public/images/icons/client-logo-dark-5.svg';
 import avatar1 from '@public/images/ns-avatar-1.png';
 import avatar2 from '@public/images/ns-avatar-2.png';
 import avatar3 from '@public/images/ns-avatar-3.png';
@@ -19,38 +19,38 @@ import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
-const clientLogos = [
-  {
-    src: ClientLogo1,
-    darkSrc: ClientLogoDark1,
-    alt: 'Client company logo 1',
-  },
-  {
-    src: ClientLogo2,
-    darkSrc: ClientLogoDark2,
-    alt: 'Client company logo 2',
-  },
-  {
-    src: ClientLogo3,
-    darkSrc: ClientLogoDark3,
-    alt: 'Client company logo 3',
-  },
-  {
-    src: ClientLogo4,
-    darkSrc: ClientLogoDark4,
-    alt: 'Client company logo 4',
-  },
-  {
-    src: ClientLogo5,
-    darkSrc: ClientLogoDark5,
-    alt: 'Client company logo 5',
-  },
-];
+// const clientLogos = [
+//   {
+//     src: ClientLogo1,
+//     darkSrc: ClientLogoDark1,
+//     alt: 'Client company logo 1',
+//   },
+//   {
+//     src: ClientLogo2,
+//     darkSrc: ClientLogoDark2,
+//     alt: 'Client company logo 2',
+//   },
+//   {
+//     src: ClientLogo3,
+//     darkSrc: ClientLogoDark3,
+//     alt: 'Client company logo 3',
+//   },
+//   {
+//     src: ClientLogo4,
+//     darkSrc: ClientLogoDark4,
+//     alt: 'Client company logo 4',
+//   },
+//   {
+//     src: ClientLogo5,
+//     darkSrc: ClientLogoDark5,
+//     alt: 'Client company logo 5',
+//   },
+// ];
 
 const Hero = () => {
   return (
     <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]" aria-label="Hero Section">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-[1440px] ">
         <div className="relative top-4 h-auto overflow-hidden rounded-[20px] bg-linear-[180deg,_#B3C3DA_0%,_#93A5BE_100%] lg:top-8">
           <figure
             className="absolute inset-0 z-0 translate-x-3 animate-pulse lg:translate-x-4 xl:translate-x-[75px]"
@@ -136,8 +136,8 @@ const Hero = () => {
         </div>
       </div>
       {/* Client Logos Section */}
-      <aside className="main-container relative z-10 mt-[64px] lg:mt-[120px]" aria-label="Our Clients">
-        <RevealAnimation delay={0.2}>
+      {/* <aside className="main-container relative z-10 mt-[64px] lg:mt-[120px]" aria-label="Our Clients">
+     <RevealAnimation delay={0.2}>
           <div className="flex flex-wrap items-center justify-center gap-4 md:flex-nowrap md:gap-x-4 lg:gap-x-8">
             {clientLogos.map((logo) => (
               <figure className="lg:ml-8 lg:min-w-36" key={logo.alt}>
@@ -146,8 +146,8 @@ const Hero = () => {
               </figure>
             ))}
           </div>
-        </RevealAnimation>
-      </aside>
+        </RevealAnimation> 
+      </aside> */}
     </section>
   );
 };

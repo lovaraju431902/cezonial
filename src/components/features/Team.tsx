@@ -6,7 +6,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import SocialLinks from '../shared/SocialLinks';
 
 const Team = () => {
-  const teamData = getMarkDownData<ITeamMember & { [key: string]: unknown }>('src/data/team', false, 'name').slice(
+  const teamData = getMarkDownData<ITeamMember & { [key: string]: unknown }>('src/data/team', false, 'order').slice(
     0,
     9,
   );

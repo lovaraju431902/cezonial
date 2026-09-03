@@ -6,52 +6,84 @@ import LinkButton from '../ui/button/LinkButton';
 
 const teamMembers = [
   {
-    name: 'Darrell Steward',
-    location: 'Monaco',
-    image: '/images/ns-avatar-2.png',
+    name: 'Sundar Reddy',
+    location: 'CEO & Senior Developer',
+    image: '/images/team/sundar-reddy.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
+    },
+    delay: '0.3',
+  },
+  {
+    name: 'Bhanu Mani Swaroop',
+    location: 'Product Manager',
+    image: '/images/team/bhanu-mani-swaroop.png',
+    social: {
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
     },
     delay: '0.4',
   },
   {
-    name: 'Wade Warren',
-    location: 'Tajikistan',
-    image: '/images/ns-avatar-3.png',
+    name: 'Keerthi',
+    location: 'Graphic Designer',
+    image: '/images/team/keerthi.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      dribble: 'https://dribbble.com',
+      linkedin: 'https://linkedin.com',
     },
     delay: '0.5',
   },
   {
-    name: 'Kathryn Murphy',
-    location: 'Palestine, State of',
-    image: '/images/ns-avatar-12.png',
+    name: 'Jyothi',
+    location: 'Front End Developer',
+    image: '/images/team/jyothi.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
     },
     delay: '0.6',
   },
   {
-    name: 'Brooklyn Simmons',
-    location: 'Palestine, State of',
-    image: '/images/ns-avatar-5.png',
+    name: 'Sailaja',
+    location: 'Android App Developer',
+    image: '/images/team/sailaja.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
     },
     delay: '0.7',
+  },
+  {
+    name: 'Vinay',
+    location: 'Backend Developer',
+    image: '/images/team/vinay.png',
+    social: {
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
+    },
+    delay: '0.8',
+  },
+  {
+    name: 'Venu Reddy',
+    location: 'iOS App Developer',
+    image: '/images/team/venu-reddy.png',
+    social: {
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
+    },
+    delay: '0.9',
+  },
+  {
+    name: 'Seeresha',
+    location: 'Full Stack Developer',
+    image: '/images/team/seeresha.png',
+    social: {
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
+    },
+    delay: '1.0',
   },
 ];
 
@@ -74,7 +106,7 @@ const Team = () => {
               </p>
             </RevealAnimation>
           </div>
-          <div className="mb-14 grid grid-cols-1 items-center justify-center gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mb-14 flex flex-wrap items-center justify-center gap-6">
             {teamMembers.map((member, index) => (
               <RevealAnimation key={member.name} delay={0.4 + index * 0.1}>
                 <div className="mx-auto h-[312px] w-[298px] space-y-[34px]">

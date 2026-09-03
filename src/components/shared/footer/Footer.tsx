@@ -32,10 +32,20 @@ const Footer = ({ className }: { className?: string }) => {
                 <figure className="max-w-[210px]">
                   <Image src={mainLogoDark} alt="Cezonal Solutions Pvt Ltd" className="h-auto w-full" />
                 </figure>
-                <p className="text-accent/70 text-tagline-1 mt-4 mb-7 font-normal">
+                <p className="text-accent/70 text-tagline-1 mt-4 mb-4 font-normal">
                   Cezonal Solutions Pvt Ltd — Crafting intelligent, scalable, and custom web &amp; mobile applications
                   engineered for business growth and transformation.
                 </p>
+                <div className="mb-6 space-y-1 text-tagline-2 text-accent/75">
+                  <p className="font-medium text-accent">📍 Office Location:</p>
+                  <Link
+                    href="https://www.google.com/maps?q=Cezonal+Solutions,+opposite+VN+Palace,+Venkatarayapuram,+Tanuku,+Sajjapuram,+Andhra+Pradesh+534122&ftid=0x3a37b7ac4526dff5:0x2a595c8af660ebcb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary-400 block text-accent/60 hover:underline transition-colors duration-200">
+                    Velpur Rd, opp. V MAX THEATRES, Venkatarayapuram, Tanuku, Andhra Pradesh 534122
+                  </Link>
+                </div>
                 <div className="flex items-center gap-3">
                   <Link target="_blank" href="https://www.facebook.com" aria-label="Facebook">
                     <Image className="size-6" src={facebook} alt="Facebook" />

@@ -1,7 +1,7 @@
 'use client';
 import { AboutIcon, BlogIcon, FeatureIcon, ServiceIcon } from '@/icons/menu-icon';
 import { cn } from '@/utils/cn';
-import nsImg419 from '@public/images/ns-img-419.jpg';
+import headquartersImg from '@public/images/about/cezonal-office-entrance.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ComponentType } from 'react';
@@ -76,8 +76,8 @@ const CompanyMenu = ({
           <Link href="/about" onClick={handleClose} className="block">
             <figure className="group relative min-h-[272px] w-full max-w-full overflow-hidden rounded-[14px]">
               <Image
-                src={nsImg419}
-                alt="Cezonal Solutions"
+                src={headquartersImg}
+                alt="Cezonal Technologies Headquarters"
                 className="h-full w-full rounded-[14px] object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-[14px]" />

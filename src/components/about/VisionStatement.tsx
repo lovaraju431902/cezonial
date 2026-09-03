@@ -1,6 +1,3 @@
-import vision1Img from '@public/images/ns-img-353.png';
-import vision2Img from '@public/images/ns-img-354.png';
-import vision3Img from '@public/images/ns-img-355.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 
@@ -23,24 +20,54 @@ const VisionStatement = () => {
             </p>
           </RevealAnimation>
         </div>
-        <article className="grid grid-cols-12 justify-center gap-x-8 gap-y-8">
-          <div className="col-span-12 space-y-8 md:col-span-6">
-            <RevealAnimation delay={0.5} instant>
-              <figure className="max-w-[630px] overflow-hidden rounded-[20px]">
-                <Image src={vision1Img} alt="vision-1" className="h-auto w-full" />
-              </figure>
-            </RevealAnimation>
-            <RevealAnimation delay={0.6} instant>
-              <figure className="max-w-[630px] overflow-hidden rounded-[20px]">
-                <Image src={vision2Img} alt="vision-2" className="h-auto w-full" />
+
+        {/* Real Team & Office Photos */}
+        <article className="grid grid-cols-12 justify-center gap-6 lg:gap-8">
+          {/* Team Celebration Photo */}
+          <div className="col-span-12 lg:col-span-7">
+            <RevealAnimation delay={0.4} instant>
+              <figure className="group relative h-[360px] sm:h-[440px] lg:h-[500px] w-full overflow-hidden rounded-[24px] border border-stroke-3 dark:border-stroke-7 shadow-xl bg-background-2 dark:bg-background-8">
+                <Image
+                  src="/images/about/cezonal-team-celebration.jpg"
+                  alt="Cezonal Solutions Team Celebration"
+                  fill
+                  priority
+                  className="size-full object-cover object-top transition-transform duration-700 ease-in-out group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6 sm:p-8">
+                  <div>
+                    <span className="badge badge-primary-light text-xs mb-2 inline-block">Our Team</span>
+                    <h3 className="text-heading-5 text-white font-semibold">Cezonal Solutions Pvt Ltd Team</h3>
+                    <p className="text-white/80 text-tagline-2">Collaborative innovation driving customer success.</p>
+                  </div>
+                </div>
               </figure>
             </RevealAnimation>
           </div>
-          <RevealAnimation delay={0.7} instant>
-            <figure className="col-span-12 max-w-[630px] overflow-hidden rounded-[20px] md:col-span-6">
-              <Image src={vision3Img} alt="vision-3" className="h-auto w-full" />
-            </figure>
-          </RevealAnimation>
+
+          {/* Office Entrance Photo */}
+          <div className="col-span-12 lg:col-span-5">
+            <RevealAnimation delay={0.5} instant>
+              <figure className="group relative h-[360px] sm:h-[440px] lg:h-[500px] w-full overflow-hidden rounded-[24px] border border-stroke-3 dark:border-stroke-7 shadow-xl bg-background-2 dark:bg-background-8">
+                <Image
+                  src="/images/about/cezonal-office-entrance.jpg"
+                  alt="Cezonal Technologies Office Entrance"
+                  fill
+                  priority
+                  className="size-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6 sm:p-8">
+                  <div>
+                    <span className="badge badge-cyan text-xs mb-2 inline-block">Our Headquarters</span>
+                    <h3 className="text-heading-5 text-white font-semibold">Cezonal Technologies Office</h3>
+                    <p className="text-white/80 text-tagline-2">Tanuku, Andhra Pradesh, India</p>
+                  </div>
+                </div>
+              </figure>
+            </RevealAnimation>
+          </div>
         </article>
       </div>
     </section>

@@ -1,28 +1,30 @@
 import { IContactInformation, ISocialLinks, ITeamMember } from '@/interface';
-import gradient06 from '@public/images/ns-img-498.png';
-import gradient from '@public/images/ns-img-516.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import ContactInformation from './ContactInformation';
+
 const TeamMemberImg = ({ data }: { data: Partial<ITeamMember> }) => {
-  const { contactInformation, social } = data;
+  const { contactInformation, social, name, role, userImg } = data;
 
   return (
     <RevealAnimation delay={0.2}>
-      <div className="bg-secondary border-background-4 dark:border-background-8 dark:bg-background-8 relative col-span-12 space-y-2.5 overflow-hidden rounded-[20px] border backdrop-blur-[12.5px] md:col-span-5">
-        <div className="pointer-events-none absolute -right-[125%] -bottom-[25%] -z-100 size-[860px] -rotate-[75deg] sm:-right-[85%] sm:-bottom-[15%] md:-right-[135%] md:-bottom-[25%] xl:-right-[105%] xl:-bottom-[15%]">
-          <Image src={gradient} alt="gradient" />
-        </div>
-        <figure className="bg-background-1 relative z-1 -ml-[1px] flex justify-center overflow-hidden rounded-b-[20px]">
-          {/* gradient bg  */}
-          <RevealAnimation delay={0.3} duration={0.8} direction="left" offset={100}>
-            <figure className="pointer-events-none absolute top-[-35%] left-[-31%] -z-1 w-[700px] select-none md:w-[550px] lg:top-[-32%] lg:w-[750px] xl:w-[940px]">
-              <Image src={gradient06} alt="bg image" className="size-full object-cover" />
-            </figure>
-          </RevealAnimation>
-          <Image src={data.userImg as string} alt="team-member-single img" width={600} height={600} />
+      <div className="relative col-span-12 overflow-hidden rounded-[24px] border border-stroke-3 dark:border-stroke-7 bg-white dark:bg-background-8 shadow-xl md:col-span-5">
+        {/* Team Member Illustration Image (No gradient overlay) */}
+        <figure className="relative w-full overflow-hidden bg-background-2 dark:bg-background-9 flex items-center justify-center">
+          <Image
+            src={(userImg as string) || '/images/team/keerthi.png'}
+            alt={`${name || 'Team member'} profile`}
+            width={600}
+            height={700}
+            priority
+            className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.02]"
+          />
         </figure>
+
+        {/* Contact Information & Socials */}
         <ContactInformation
+          name={name}
+          role={role}
           contactInformation={contactInformation as IContactInformation}
           social={social as ISocialLinks}
         />

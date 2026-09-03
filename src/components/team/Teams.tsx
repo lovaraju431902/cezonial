@@ -9,7 +9,7 @@ const Teams = () => {
   const teams: ITeamMember[] = getMarkDownData<ITeamMember & { [key: string]: unknown }>(
     'src/data/team',
     false,
-    'name',
+    'order',
   ).slice(0, 8);
   return (
     <section className="pt-14 pb-[50px] md:pt-16 md:pb-[70px] lg:pt-[88px] lg:pb-[85px] xl:pt-[100px] xl:pb-[100px]">
