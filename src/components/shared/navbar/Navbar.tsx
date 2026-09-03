@@ -6,8 +6,6 @@ import { MobileMenuProvider } from '@/context/MobileMenuContext';
 import { mobileMenuData } from '@/data/navbar-data';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { cn } from '@/utils/cn';
-import logoDark from '@public/images/shared/logo-dark.svg';
-import logoIcon from '@public/images/shared/logo.svg';
 import mainLogoDark from '@public/images/shared/main-logo-dark.svg';
 import mainLogo from '@public/images/shared/main-logo.svg';
 import Image from 'next/image';
@@ -48,13 +46,9 @@ const Navbar = () => {
             <div className="flex items-center justify-center">
               <Link href="/" className="inline-flex items-center gap-2">
                 <span className="sr-only">Cezonal Solutions Pvt Ltd</span>
-                <figure className="hidden sm:block sm:max-w-[210px]">
+                <figure className="max-w-[155px] min-[390px]:max-w-[175px] sm:max-w-[210px]">
                   <Image src={mainLogo} alt="Cezonal Solutions" className="block h-auto w-full dark:hidden" priority />
                   <Image src={mainLogoDark} alt="Cezonal Solutions" className="hidden h-auto w-full dark:block" priority />
-                </figure>
-                <figure className="block max-w-[38px] sm:hidden">
-                  <Image src={logoIcon} alt="Cezonal Solutions" className="block h-auto w-full dark:hidden" priority />
-                  <Image src={logoDark} alt="Cezonal Solutions" className="hidden h-auto w-full dark:block" priority />
                 </figure>
               </Link>
             </div>

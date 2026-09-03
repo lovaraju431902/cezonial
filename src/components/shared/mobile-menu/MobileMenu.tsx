@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { useMobileMenuContext } from '@/context/MobileMenuContext';
 import { cn } from '@/utils/cn';
-import logoDark from '@public/images/shared/logo-dark.svg';
-import logoIcon from '@public/images/shared/logo.svg';
+import mainLogoDark from '@public/images/shared/main-logo-dark.svg';
+import mainLogo from '@public/images/shared/main-logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import MenuCloseButton from './MenuCloseButton';
@@ -34,7 +34,7 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
 
   return (
     <>
-      {/* Bacjfjedjjdkdrop overlay */}
+      {/* Backdrop overlay */}
       <div
         onClick={closeMenu}
         aria-hidden="true"
@@ -53,9 +53,9 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
           <div className="flex items-center justify-between">
             <Link href="/" onClick={closeMenu}>
               <span className="sr-only">Home</span>
-              <figure className="max-w-[44px]">
-                <Image src={logoIcon} alt="Cezonal Solutions" className="block w-full dark:hidden" />
-                <Image src={logoDark} alt="Cezonal Solutions" className="hidden w-full dark:block" />
+              <figure className="max-w-[160px] sm:max-w-[190px]">
+                <Image src={mainLogo} alt="Cezonal Solutions" className="block h-auto w-full dark:hidden" />
+                <Image src={mainLogoDark} alt="Cezonal Solutions" className="hidden h-auto w-full dark:block" />
               </figure>
             </Link>
             {/* close btn  */}
