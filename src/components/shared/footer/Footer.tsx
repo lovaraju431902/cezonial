@@ -48,23 +48,23 @@ const Footer = ({ className }: { className?: string }) => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Link target="_blank" href="https://www.facebook.com" aria-label="Facebook">
-                    <Image className="size-6" src={facebook} alt="Facebook" />
+                    <Image className="size-6" src={facebook} alt="Facebook" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
                   </Link>
                   <div className="bg-stroke-1/20 h-6 w-px" />
                   <Link target="_blank" href="https://www.instagram.com" aria-label="Instagram">
-                    <Image className="size-6" src={instagram} alt="Instagram" />
+                    <Image className="size-6" src={instagram} alt="Instagram" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
                   </Link>
                   <div className="bg-stroke-1/20 h-6 w-px" />
                   <Link target="_blank" href="https://www.youtube.com" aria-label="YouTube">
-                    <Image className="size-6" src={youtube} alt="Youtube" />
+                    <Image className="size-6" src={youtube} alt="Youtube" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
                   </Link>
                   <div className="bg-stroke-1/20 h-6 w-px" />
                   <Link target="_blank" href="https://www.linkedin.com" aria-label="LinkedIn">
-                    <Image className="size-6" src={linkedin} alt="LinkedIn" />
+                    <Image className="size-6" src={linkedin} alt="LinkedIn" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
                   </Link>
                   <div className="bg-stroke-1/20 h-6 w-px" />
                   <Link target="_blank" href="https://www.dribbble.com" aria-label="Dribbble">
-                    <Image className="size-6" src={dribbble} alt="Dribbble" />
+                    <Image className="size-6" src={dribbble} alt="Dribbble" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
                   </Link>
                 </div>
               </div>

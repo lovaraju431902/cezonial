@@ -46,7 +46,7 @@ const TestimonialMarquee = () => {
                         <div className="border-stroke-4 dark:border-stroke-7 my-8 border-b" />
                         {/* avatar  */}
                         <div className="flex items-center gap-3">
-                          <figure className="size-12 overflow-hidden rounded-full bg-(image:--color-gradient-6)">
+                          <figure className="size-12 overflow-hidden rounded-full shrink-0 border border-stroke-3 dark:border-stroke-7">
                             <Image
                               width={48}
                               height={48}
@@ -80,7 +80,7 @@ const TestimonialMarquee = () => {
                         <div className="border-stroke-4 dark:border-stroke-7 my-8 border-b" />
                         {/* avatar  */}
                         <div className="flex items-center gap-3">
-                          <figure className="size-12 overflow-hidden rounded-full bg-(image:--color-gradient-6)">
+                          <figure className="size-12 overflow-hidden rounded-full shrink-0 border border-stroke-3 dark:border-stroke-7">
                             <Image
                               width={48}
                               height={48}
@@ -114,7 +114,7 @@ const TestimonialMarquee = () => {
                         <div className="border-stroke-4 dark:border-stroke-7 my-8 border-b" />
                         {/* avatar  */}
                         <div className="flex items-center gap-3">
-                          <figure className="size-12 overflow-hidden rounded-full bg-(image:--color-gradient-6)">
+                          <figure className="size-12 overflow-hidden rounded-full shrink-0 border border-stroke-3 dark:border-stroke-7">
                             <Image
                               width={48}
                               height={48}

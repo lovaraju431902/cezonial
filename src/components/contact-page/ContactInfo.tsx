@@ -69,7 +69,7 @@ const ContactInfo = () => {
                       <Image src={item.gradient} alt="Decorative gradient overlay" className="size-full object-cover" />
                     </figure>
                     <figure className="mx-auto size-10 overflow-hidden">
-                      <Image src={item.icon} alt={`${item.title} icon`} className="size-full object-cover" />
+                      <Image src={item.icon} alt={`${item.title} icon`} className="size-full object-cover" width={40} height={40} style={{ width: 'auto', height: 'auto' }} />
                     </figure>
                     <div className="space-y-2.5">
                       <p className="text-heading-6 text-accent">{item.title}</p>

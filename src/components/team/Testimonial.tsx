@@ -40,7 +40,7 @@ const Testimonial = () => {
                       <figure className="flex items-center gap-3">
                         <Image
                           src={testimonial.avatar}
-                          className="size-11 rounded-full bg-linear-[156deg,#FFF_32.92%,#A585FF_91%] object-cover object-center"
+                          className="size-11 rounded-full object-cover object-center border border-stroke-3 dark:border-stroke-7"
                           alt={`${testimonial.name}'s avatar`}
                           width={44}
                           height={44}

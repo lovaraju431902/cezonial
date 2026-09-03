@@ -39,8 +39,8 @@ const Reviews = () => {
               <h2>Real people. Real results.</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
-              <p className="mx-auto max-w-[472px] md:w-full">
-                “Nextsaas delivered our entire platform ahead of schedule—flawless execution and real partnership.”
+              <p className="mx-auto max-w-[540px] md:w-full">
+                “Cezonal Solutions delivered our entire app on time — super fast execution, friendly team, and 100% reliable support.”
               </p>
             </RevealAnimation>
           </div>
@@ -64,11 +64,9 @@ const Reviews = () => {
                 className="swiper reviews-swiper">
                 <div className="swiper-wrapper">
                   {reviews.map((review: Review, i: number) => {
-                    const figureBg = pickGradient(i);
-
                     return (
                       <SwiperSlide className="swiper-slide" key={review.id ?? `${review.name}-${i}`}>
-                        <div className="dark:bg-background-6 relative z-0 flex flex-col gap-y-8 overflow-hidden rounded-[20px] bg-white p-8">
+                        <div className="dark:bg-background-6 relative z-0 flex flex-col gap-y-6 overflow-hidden rounded-[20px] bg-white p-8 border border-stroke-3 dark:border-stroke-7 shadow-md">
                           <div className="gradient-overlay pointer-events-none absolute -top-[180px] -left-[180px] -z-10 h-full w-full opacity-0 transition-opacity duration-300 select-none max-md:h-[300px] max-md:w-[350px] md:-top-[190px] md:-left-[190px] lg:-top-[150px] lg:-left-[150px] xl:-top-[220px] xl:-left-[220px]">
                             <Image
                               src={gradient9}
@@ -77,24 +75,24 @@ const Reviews = () => {
                             />
                           </div>
 
-                          <figure className={`inline-block size-14 rounded-full ${figureBg} relative overflow-hidden`}>
+                          <figure className="inline-block size-16 rounded-full overflow-hidden shrink-0 border-2 border-primary-500/20 shadow-md">
                             <Image
-                              src={review.avatar ?? 'images/ns-avatar-1.png'}
+                              src={review.avatar ?? '/images/testimonials/client-ramesh.jpg'}
                               alt={review.name ?? 'avatar'}
-                              className="max-w-full"
-                              width={56}
-                              height={56}
+                              className="size-full object-cover"
+                              width={64}
+                              height={64}
                             />
                           </figure>
 
-                          <p className="text-secondary/60 dark:text-accent/60 review-text line-clamp-2">{`"${review.quote}"`}</p>
+                          <p className="text-secondary/70 dark:text-accent/70 review-text line-clamp-3 min-h-[66px] italic leading-relaxed">{`"${review.quote}"`}</p>
 
                           <div>
-                            <p className="text-secondary dark:text-accent review-name text-lg leading-[1.5] font-medium">
+                            <p className="text-secondary dark:text-accent review-name text-lg leading-[1.4] font-semibold">
                               {review.name}
                             </p>
                             {review.position && (
-                              <p className="text-secondary/60 dark:text-accent/60 text-tagline-2 review-title">
+                              <p className="text-primary-500 dark:text-primary-400 text-tagline-2 review-title font-medium mt-0.5">
                                 {review.position}
                               </p>
                             )}

@@ -1,6 +1,17 @@
+'use client';
+
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
-import Map from '../shared/Map';
+
+const Map = dynamic(() => import('../shared/Map'), {
+  ssr: false,
+  loading: () => (
+    <div className="flex h-full w-full items-center justify-center bg-background-2 dark:bg-background-8 animate-pulse">
+      <p className="text-tagline-2 text-secondary/60 dark:text-accent/60">Loading map...</p>
+    </div>
+  ),
+});
 
 const GOOGLE_MAPS_URL =
   'https://www.google.com/maps?q=Cezonal+Solutions,+opposite+VN+Palace,+Venkatarayapuram,+Tanuku,+Sajjapuram,+Andhra+Pradesh+534122&ftid=0x3a37b7ac4526dff5:0x2a595c8af660ebcb';

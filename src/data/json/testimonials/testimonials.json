@@ -1,74 +1,50 @@
 [
   {
     "id": 1,
-    "quote": "The platform's intuitive interface and powerful features have revolutionized our workflow. Customer support has been exceptional every step of the way.",
-    "avatar": "/images/ns-avatar-1.png",
-    "name": "Sarah Johnson",
-    "position": "Marketing Director",
-    "rating": "4.9"
+    "quote": "Maa business ki perfect e-commerce app ready chesaru. UI design and speed chala bagundi bro. Orders handling super easy aipoindi, fully satisfied with Cezonal!",
+    "avatar": "/images/testimonials/client-ramesh.jpg",
+    "name": "Ramesh Naidu",
+    "position": "Founder, Naidu Mart & Retail",
+    "rating": "5.0"
   },
   {
     "id": 2,
-    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.",
-    "avatar": "/images/ns-avatar-2.png",
-    "name": "Michael Chen",
-    "position": "Tech Lead",
+    "quote": "Cezonal team delivery and communication chala genuine. Exact timeline lo mobile app develop chesi icharu. Zero bugs and great performance. Super work!",
+    "avatar": "/images/testimonials/client-suresh.jpg",
+    "name": "Suresh Varma",
+    "position": "CEO, Varma Logistics",
     "rating": "5.0"
   },
   {
     "id": 3,
-    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.  ",
-    "avatar": "/images/ns-avatar-3.png",
-    "name": "Emma Rodriguez",
-    "position": "Operations Manager",
-    "rating": "4.8"
+    "quote": "Next-level software development mawa! Fast delivery and clean coding. Ekkada chinna issue vachina ventane solve chestharu. Highly recommended team.",
+    "avatar": "/images/testimonials/client-kalyan.jpg",
+    "name": "Kalyan Kumar",
+    "position": "Director, Sri Kalyan Tech Solutions",
+    "rating": "4.9"
   },
   {
     "id": 4,
-    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.",
-    "avatar": "/images/ns-avatar-4.png",
-    "name": "Jaks Rodriguez",
-    "position": "Software Manager",
-    "rating": "3.8"
+    "quote": "Maa restaurant & delivery system ki customized app create chesaru. Live order tracking chala smooth ga work avthundi. Maa customers kuda chala happy.",
+    "avatar": "/images/testimonials/client-chaitanya.jpg",
+    "name": "Chaitanya Raju",
+    "position": "Managing Partner, Godavari Foods",
+    "rating": "5.0"
   },
   {
     "id": 5,
-    "quote": "I appreciate the real-time analytics and customizable dashboards. It has made tracking our KPIs so much easier and more insightful.",
-    "avatar": "/images/ns-avatar-5.png",
-    "name": "Priya Patel",
-    "position": "Data Analyst",
-    "rating": "4.7"
+    "quote": "Very friendly and talented developers bro. Ma business requirement motham clear ga understand cheskuni superb mobile app deliver chesaru. Best service!",
+    "avatar": "/images/testimonials/client-venkat.jpg",
+    "name": "Venkata Krishna",
+    "position": "Product Lead, Krishna Healthcare",
+    "rating": "4.9"
   },
   {
     "id": 6,
-    "quote": "From onboarding to daily use, the experience has been smooth and intuitive. Our team collaboration has improved significantly.",
-    "avatar": "/images/ns-avatar-6.png",
-    "name": "Lucas Meyer",
-    "position": "Project Coordinator",
-    "rating": "4.6"
-  },
-  {
-    "id": 7,
-    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.",
-    "avatar": "/images/ns-avatar-7.png",
-    "name": "Lucas Meyer",
-    "position": "Project Coordinator",
-    "rating": "4.6"
-  },
-  {
-    "id": 8,
-    "quote": "From onboarding to daily use, the experience has been smooth and intuitive. Our team collaboration has improved significantly.",
-    "avatar": "/images/ns-avatar-8.png",
-    "name": "Lucas Meyer",
-    "position": "Project Coordinator",
-    "rating": "4.6"
-  },
-  {
-    "id": 9,
-    "quote": "From onboarding to daily use, the experience has been smooth and intuitive. Our team collaboration has improved significantly.",
-    "avatar": "/images/ns-avatar-9.png",
-    "name": "Lucas Meyer",
-    "position": "Project Coordinator",
-    "rating": "4.6"
+    "quote": "App UI and backend speed excellent ga undi. Android and iOS rendu platforms lo smooth ga run avthundi. Team support is always available 24/7.",
+    "avatar": "/images/testimonials/client-saiteja.jpg",
+    "name": "Sai Teja Reddy",
+    "position": "Co-Founder, QuickRide Mobility",
+    "rating": "5.0"
   }
 ]

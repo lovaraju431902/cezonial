@@ -45,8 +45,8 @@ const Reviews = () => {
                       <figure className="size-12 overflow-hidden rounded-full">
                         <Image
                           src={testimonial.avatar}
-                          alt="avatar"
-                          className="h-full w-full bg-linear-[156deg,#83E7EE_2.92%,#C6F56F_91%]"
+                          alt={testimonial.name}
+                          className="size-full object-cover"
                           width={48}
                           height={48}
                         />

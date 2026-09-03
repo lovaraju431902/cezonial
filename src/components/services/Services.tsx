@@ -39,9 +39,9 @@ const Services = () => {
                   </div>
                   <div>
                     <LinkButton
-                      href={`/services/${service.slug}`}
+                      href="/contact-us"
                       className="btn btn-white dark:btn-transparent dark:hover:btn-accent hover:btn-secondary btn-md">
-                      Read more
+                      Get Started
                     </LinkButton>
                   </div>
                 </div>

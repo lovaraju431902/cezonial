@@ -1,54 +1,57 @@
-import RevealAnimation from '@/components/animation/RevealAnimation';
 import LinkButton from '@/components/ui/button/LinkButton';
 import { defaultMetadata } from '@/utils/generateMetaData';
-import gradientBg from '@public/images/ns-img-498.png';
 import { Metadata } from 'next';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: '404 - App Development ||Cezonial Solutions',
+  title: '404 - Page Not Found || Cezonal Solutions',
 };
 
-const page = () => {
+const NotFound = () => {
   return (
-    <main className="bg-background-2 dark:bg-background-5">
-      <section className="section-reveal pt-28 pb-20 md:pt-36 md:pb-28 lg:pt-44 lg:pb-40 xl:pt-60 xl:pb-52">
+    <main className="bg-background-2 dark:bg-background-5 min-h-[85vh] flex items-center justify-center">
+      <section className="pt-36 pb-20 md:pt-44 md:pb-28 lg:pt-52 lg:pb-36 w-full">
         <div className="main-container">
-          <RevealAnimation delay={0.1}>
-            <div className="bg-background-3 dark:bg-background-5 dark:border-background-9 relative flex flex-col items-center justify-center overflow-hidden rounded-4xl border-[10px] border-white py-10 pr-2.5 text-center md:py-20 lg:py-[100px]">
-              <RevealAnimation delay={0.2} direction="right" offset={200}>
-                <figure className="hero-gradient-2 pointer-events-none absolute -top-[45%] -right-[68%] -z-0 h-full w-full -rotate-[68deg] opacity-70 select-none sm:-top-[65%] sm:-right-[48%]">
-                  <Image src={gradientBg} alt="gradient" className="rotate-180" />
-                </figure>
-              </RevealAnimation>
-              <RevealAnimation delay={0.3}>
-                <h1 className="text-[80px] leading-[1.1] font-medium md:text-[120px] lg:!text-[180px] xl:!text-[200px]">
-                  404
-                </h1>
-              </RevealAnimation>
-              <RevealAnimation delay={0.4}>
-                <h2 className="pt-6 pb-3">
-                  Opps! <br />
-                  Lost in the page?
-                </h2>
-              </RevealAnimation>
-              <RevealAnimation delay={0.5}>
-                <p className="mb-10 md:mb-14">Don’t worry, we’ll help you find your way</p>
-              </RevealAnimation>
-              <RevealAnimation delay={0.6} instant>
-                <div>
-                  <LinkButton href="/" className="btn btn-lg btn-primary hover:btn-secondary dark:hover:btn-accent">
-                    Go to Home
-                  </LinkButton>
-                </div>
-              </RevealAnimation>
+          <div className="bg-white dark:bg-background-6 relative mx-auto flex max-w-[850px] flex-col items-center justify-center overflow-hidden rounded-[32px] border border-stroke-3 dark:border-stroke-7 p-8 text-center shadow-2xl md:p-16 lg:p-20">
+            {/* Subtle glow accents */}
+            <div className="pointer-events-none absolute -top-24 -right-24 size-96 rounded-full bg-primary-500/10 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-24 size-96 rounded-full bg-secondary/10 dark:bg-accent/5 blur-3xl" />
+
+            {/* Badge */}
+            <span className="badge badge-cyan mb-6">Error 404</span>
+
+            {/* Big 404 Heading */}
+            <h1 className="bg-gradient-to-r from-primary-500 via-primary-400 to-primary-600 bg-clip-text text-transparent text-[84px] font-extrabold leading-none tracking-tight sm:text-[120px] md:text-[160px] lg:text-[180px]">
+              404
+            </h1>
+
+            {/* Message */}
+            <div className="space-y-3 mt-4 mb-8 max-w-[540px]">
+              <h2 className="text-heading-3 text-secondary dark:text-accent font-bold">
+                Oops! Lost in the digital space?
+              </h2>
+              <p className="text-secondary/70 dark:text-accent/70 text-tagline-1">
+                The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+              </p>
             </div>
-          </RevealAnimation>
+
+            {/* Actions */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <LinkButton href="/" className="btn btn-lg btn-primary hover:btn-secondary dark:hover:btn-accent shadow-md">
+                Back to Homepage
+              </LinkButton>
+              <Link
+                href="/contact-us"
+                className="btn btn-lg btn-outline border-stroke-3 dark:border-stroke-7 text-secondary dark:text-accent hover:bg-background-2 dark:hover:bg-background-7 transition-all duration-200">
+                Contact Support
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   );
 };
 
-export default page;
+export default NotFound;
