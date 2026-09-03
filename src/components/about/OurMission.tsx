@@ -1,3 +1,4 @@
+import React from 'react';
 import authorAvatarBgImg from '@public/images/ns-author-avatar-bg.png';
 import avatar1Img from '@public/images/ns-avatar-1.png';
 import avatar2Img from '@public/images/ns-avatar-2.png';
@@ -37,8 +38,8 @@ const OurMission = () => {
                   </h5>
                   <div className="mb-7 flex items-center gap-4">
                     <figure className="relative inline-block size-14 overflow-hidden rounded-full bg-linear-[135deg,#ffffff_0%,#a585ff_100%] ring-4 ring-white">
-                      <Image src={avatar7Img} alt="avatar" className="max-w-full" />
-                      <Image src={authorAvatarBgImg} alt="avatar" className="absolute top-0 left-0 -z-10" />
+                      <Image src={avatar1Img} alt="avatar" className="max-w-full" />
+                      <Image src={avatar1Img} alt="avatar" className="absolute top-0 left-0 -z-10" />
                     </figure>
                     <div>
                       <h5 className="text-secondary dark:text-accent">Curious george</h5>

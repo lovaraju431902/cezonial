@@ -49,7 +49,7 @@ import LinkButton from '../ui/button/LinkButton';
 
 const Hero = () => {
   return (
-    <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] mx-30" aria-label="Hero Section">
+    <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] mx-5 lg:mx-12 xl:mx-30" aria-label="Hero Section">
       <div className="mx-auto max-w-[1440px] ">
         <div className="relative top-4 h-auto overflow-hidden rounded-[20px] bg-linear-[180deg,_#B3C3DA_0%,_#93A5BE_100%] lg:top-8">
           <figure
