@@ -1,3 +1,5 @@
+'use client';
+
 import services1 from '@public/images/ns-img-144.png';
 import timelineVector from '@public/images/ns-img-166.png';
 import abstractBg from '@public/images/ns-img-167.png';

@@ -48,9 +48,11 @@ const ProcessStep = () => {
           delay: index * 0.2,
           scrollTrigger: {
             trigger: line,
-            start: 'top 80%',
+            start: 'top 85%',
             end: 'top 20%',
-            toggleActions: 'play none none reverse',
+            once: true,
+            toggleActions: 'play none none none',
+            invalidateOnRefresh: true,
           },
         });
       });

@@ -1,3 +1,5 @@
+'use client';
+
 import gradient15 from '@public/images/ns-img-507.png';
 import gradient50 from '@public/images/ns-img-538.png';
 import Image from 'next/image';

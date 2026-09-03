@@ -10,14 +10,14 @@ const Services = () => {
     <section className="pt-32 pb-14 sm:pt-36 md:pt-42 md:pb-16 lg:pb-[88px] xl:pt-[180px] xl:pb-[100px]">
       <div className="main-container">
         <div className="mb-[70px] space-y-5 text-center">
-          <RevealAnimation delay={0.2}>
+          <RevealAnimation delay={0.1} instant>
             <span className="badge badge-yellow-v2">Our Services</span>
           </RevealAnimation>
           <div className="space-y-3">
-            <RevealAnimation delay={0.3}>
+            <RevealAnimation delay={0.2} instant>
               <h2 className="mx-auto max-w-[878px]">Leading companies around the globe rely on nexSaas.</h2>
             </RevealAnimation>
-            <RevealAnimation delay={0.4}>
+            <RevealAnimation delay={0.3} instant>
               <p className="mx-auto max-w-[700px]">
                 Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not
                 Latin, though it looks like it, and it actually has no meaning.

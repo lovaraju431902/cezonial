@@ -58,13 +58,14 @@ export const useWordAnimation = (options: UseWordAnimationOptions = {}) => {
       });
 
       // Start animation after DOM update
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         gsap.to(words, {
           scrollTrigger: {
             trigger: titleRef.current,
             start,
             end,
             scrub: true,
+            invalidateOnRefresh: true,
           },
           opacity: 1,
           stagger,
@@ -74,6 +75,7 @@ export const useWordAnimation = (options: UseWordAnimationOptions = {}) => {
       }, delay);
 
       return () => {
+        clearTimeout(timer);
         split.revert(); // Clean up SplitText
       };
     },

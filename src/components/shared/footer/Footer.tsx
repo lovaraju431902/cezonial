@@ -1,3 +1,5 @@
+'use client';
+
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { footerLinks } from '@/data/footer-data';
 import { cn } from '@/utils/cn';

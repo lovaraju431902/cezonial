@@ -1,14 +1,41 @@
+'use client';
+
 import { ICaseStudy } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
-const featuredProjects: ICaseStudy[] = getMarkDownData<ICaseStudy & { [key: string]: unknown }>('src/data/case-study')
-  .filter((project) => project.showHomePage === true)
-  .slice(0, 3);
+interface FeaturesProps {
+  projects?: ICaseStudy[];
+}
 
-const Features = () => {
+const defaultProjects: ICaseStudy[] = [
+  {
+    title: 'Mobile app development for a modern fintech company',
+    slug: 'mobile-app-development-for-a-modern-fintech-company',
+    thumbnail: '/images/ns-img-323.png',
+    result: 'Increased user engagement by 45%',
+    showHomePage: true,
+  },
+  {
+    title: 'Web app development for a leading healthcare platform',
+    slug: 'web-app-development-for-a-leading-healthcare-platform',
+    thumbnail: '/images/ns-img-324.png',
+    result: 'Reduced patient wait times by 30%',
+    showHomePage: true,
+  },
+  {
+    title: 'AI-powered patient care solutions in healthcare',
+    slug: 'ai-powered-patient-care-solutions-in-healthcare',
+    thumbnail: '/images/ns-img-325.png',
+    result: 'Automated 60% of routine workflows',
+    showHomePage: true,
+  },
+];
+
+const Features = ({ projects = defaultProjects }: FeaturesProps) => {
+  const featuredProjects = projects.length >= 3 ? projects : defaultProjects;
+
   return (
     <section className="pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
       <div className="mx-5 max-w-[1440px] sm:mx-auto">
@@ -30,15 +57,17 @@ const Features = () => {
                     <div className="group relative h-[576px] w-full overflow-hidden rounded-[20px]">
                       <div className="absolute inset-0 z-10 bg-black/70 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                       <Image
-                        src={featuredProjects[1].thumbnail}
+                        src={featuredProjects[1]?.thumbnail || featuredProjects[0]?.thumbnail}
                         className="h-full w-full object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
                         alt="portfolio"
                         width={1290}
-                        priority
                         height={570}
+                        sizes="(max-width: 1290px) 100vw, 1290px"
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
                       />
                       <LinkButton
-                        href={`/case-study/${featuredProjects[1].slug}`}
+                        href={`/case-study/${featuredProjects[1]?.slug || featuredProjects[0]?.slug}`}
                         className="btn btn-white btn-xl hover:btn-secondary dark:btn-white-dark dark:hover:btn-accent group-hover:shadow-3 absolute top-[55%] left-1/2 z-20 -translate-x-1/2 transform opacity-0 transition-all duration-300 group-hover:top-1/2 group-hover:opacity-100 hover:scale-[102%]">
                         View case studies
                       </LinkButton>
@@ -60,6 +89,7 @@ const Features = () => {
                         className="h-full w-full object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
                         alt="portfolio"
                         fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
                         priority
                       />
                       <LinkButton
@@ -84,6 +114,7 @@ const Features = () => {
                         src={featuredProjects[0].thumbnail}
                         alt="portfolio"
                         fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
                         priority
                         className="dark:bg-background-9 bg-background-1 h-full w-full object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
                       />

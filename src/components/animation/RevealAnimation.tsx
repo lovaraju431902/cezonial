@@ -45,11 +45,18 @@ const RevealAnimation = ({
   className = '',
 }: RevealAnimationProps) => {
   const elementRef = useRef<HTMLElement>(null);
+  const hasAnimatedRef = useRef<boolean>(false);
 
   useGSAP(
     () => {
       const element = elementRef.current;
       if (!element) {
+        return;
+      }
+
+      // If already animated, ensure it stays visible
+      if (hasAnimatedRef.current) {
+        gsap.set(element, { opacity: 1, x: 0, y: 0, filter: 'blur(0px)', clearProps: 'transform,filter,opacity' });
         return;
       }
 
@@ -100,6 +107,10 @@ const RevealAnimation = ({
         duration,
         delay,
         ease,
+        clearProps: 'transform,filter,opacity',
+        onComplete: () => {
+          hasAnimatedRef.current = true;
+        },
       };
 
       if (rotation !== 0) {
@@ -109,8 +120,8 @@ const RevealAnimation = ({
       if (!shouldAnimateInstantly) {
         toVars.scrollTrigger = {
           trigger: element,
-          start,
-          end,
+          start: start || 'top 90%',
+          end: end || 'top 50%',
           once: true,
           toggleActions: 'play none none none',
           invalidateOnRefresh: true,
@@ -138,5 +149,6 @@ const RevealAnimation = ({
 };
 
 export default RevealAnimation;
+
 
 

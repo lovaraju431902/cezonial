@@ -1,3 +1,5 @@
+'use client';
+
 import figma from '@public/images/icons/figma.svg';
 import shopify from '@public/images/icons/shopify.svg';
 import slack from '@public/images/icons/slack.svg';
@@ -74,7 +76,7 @@ const Integration = () => {
                       className="dark:bg-secondary/60 mx-2 flex scale-100 cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white p-4 transition-transform duration-500 hover:scale-[102%] hover:transition-transform hover:duration-500 sm:mx-0 sm:p-8">
                       <div className="flex items-center gap-4">
                         <figure className="size-14 shrink-0 grow-0 transition-transform duration-500 group-hover:scale-[103%] group-hover:rotate-12">
-                          <Image src={integration.icon} alt={integration.name} className="size-14 object-contain" />
+                          <Image src={integration.icon} alt={integration.name} className="size-14 object-contain" style={{ width: 'auto', height: 'auto' }} />
                         </figure>
                         <div className="shrink-0 grow-0 transform transition-transform duration-500 group-hover:translate-x-1.5">
                           <h5>{integration.name}</h5>

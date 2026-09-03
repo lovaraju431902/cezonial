@@ -9,13 +9,13 @@ const VisionStatement = () => {
     <section className="pt-32 pb-14 sm:pt-36 md:pt-42 md:pb-16 lg:pb-[88px] xl:pt-[180px] xl:pb-[100px]">
       <div className="main-container space-y-14 md:space-y-[70px]">
         <div className="mx-auto max-w-[780px] space-y-3 text-center">
-          <RevealAnimation delay={0.2}>
+          <RevealAnimation delay={0.1} instant>
             <span className="badge badge-cyan mb-5">Passion meets purpose</span>
           </RevealAnimation>
-          <RevealAnimation delay={0.3}>
+          <RevealAnimation delay={0.2} instant>
             <h2>NextSaaS is defining the future landscape of business.</h2>
           </RevealAnimation>
-          <RevealAnimation delay={0.4}>
+          <RevealAnimation delay={0.3} instant>
             <p>
               In a rapidly evolving digital world, NextSaaS stands at the forefront of innovation, transforming how
               businesses operate, connect, and grow.By delivering intelligent, scalable, and user-focused SaaS

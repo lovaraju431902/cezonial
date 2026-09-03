@@ -22,10 +22,19 @@ export const useProgressAnimation = (targetValue: number, options: UseProgressAn
   const [value, setValue] = useState(0);
   const elementRef = useRef<HTMLDivElement>(null);
 
+  const hasAnimatedRef = useRef(false);
+
   useGSAP(
     () => {
-      // Reset value on every animation run
-      setValue(0);
+      const element = elementRef.current;
+      if (!element) {
+        return;
+      }
+
+      if (hasAnimatedRef.current) {
+        setValue(targetValue);
+        return;
+      }
 
       const counter = { val: 0 };
 
@@ -33,57 +42,45 @@ export const useProgressAnimation = (targetValue: number, options: UseProgressAn
         // Animate on scroll trigger
         gsap.to(counter, {
           val: targetValue,
-          duration: duration,
-          delay: delay,
-          ease: ease,
+          duration,
+          delay,
+          ease,
           scrollTrigger: {
-            trigger: elementRef.current,
+            trigger: element,
             start: 'top 90%',
             end: 'bottom 10%',
-            toggleActions: 'play none none reverse',
-            invalidateOnRefresh: true, // Refresh on window resize/reload
-            refreshPriority: -1, // Lower priority to ensure proper initialization
-            onRefresh: () => {
-              // Reset counter and value when refreshing
-              counter.val = 0;
-              setValue(0);
-            },
+            once: true,
+            toggleActions: 'play none none none',
+            invalidateOnRefresh: true,
           },
           onUpdate: () => {
             setValue(Math.floor(counter.val));
           },
           onComplete: () => {
             setValue(targetValue);
+            hasAnimatedRef.current = true;
           },
         });
       } else {
         // Animate immediately
         gsap.to(counter, {
           val: targetValue,
-          duration: duration,
-          delay: delay,
-          ease: ease,
+          duration,
+          delay,
+          ease,
           onUpdate: () => {
             setValue(Math.floor(counter.val));
           },
           onComplete: () => {
             setValue(targetValue);
+            hasAnimatedRef.current = true;
           },
         });
       }
-
-      // Cleanup function
-      return () => {
-        ScrollTrigger.getAll().forEach((trigger) => {
-          if (trigger.trigger === elementRef.current) {
-            trigger.kill();
-          }
-        });
-      };
     },
     {
       scope: elementRef,
-      dependencies: [targetValue, duration, delay, ease, triggerOnScroll], // Re-run when dependencies change
+      dependencies: [targetValue, duration, delay, ease, triggerOnScroll],
     },
   );
 

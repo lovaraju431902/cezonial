@@ -52,6 +52,7 @@ const Accordion: React.FC<AccordionProps> = ({
 }) => {
   const [activeItem, setActiveItem] = useState<string | null>(defaultValue || null);
   const accordionRef = useRef<HTMLDivElement>(null);
+  const hasAnimatedRef = useRef<boolean>(false);
 
   // Initialize scroll animations for accordion items
   useGSAP(() => {
@@ -59,41 +60,49 @@ const Accordion: React.FC<AccordionProps> = ({
       return;
     }
 
+    if (hasAnimatedRef.current) {
+      return;
+    }
+
     const items = accordionRef.current.querySelectorAll('.accordion-item');
 
     items.forEach((item, index) => {
-      // Set initial state
-      gsap.set(item, {
-        opacity: 0,
-        y: 50,
-        filter: 'blur(20px)',
-        overflow: 'hidden',
-      });
+      const rect = item.getBoundingClientRect();
+      const isAlreadyInViewport = rect.top < (window.innerHeight || 800) && rect.bottom > 0;
 
-      // Create scroll trigger animation
-      gsap.fromTo(
-        item,
-        {
-          opacity: 0,
-          y: 50,
-          filter: 'blur(20px)',
+      const fromVars: gsap.TweenVars = {
+        opacity: 0,
+        y: 30,
+        filter: 'blur(6px)',
+      };
+
+      const toVars: gsap.TweenVars = {
+        opacity: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        duration: 0.5,
+        delay: index * animationDelay,
+        ease: 'power2.out',
+        clearProps: 'filter,transform,opacity',
+        onComplete: () => {
+          if (index === items.length - 1) {
+            hasAnimatedRef.current = true;
+          }
         },
-        {
-          opacity: 1,
-          y: 0,
-          filter: 'blur(0px)',
-          duration: 0.5,
-          delay: index * animationDelay,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: item,
-            start: 'top 90%',
-            end: 'top 50%',
-            scrub: false,
-            once: true,
-          },
-        },
-      );
+      };
+
+      if (!isAlreadyInViewport) {
+        toVars.scrollTrigger = {
+          trigger: item,
+          start: 'top 90%',
+          end: 'top 50%',
+          scrub: false,
+          once: true,
+          invalidateOnRefresh: true,
+        };
+      }
+
+      gsap.fromTo(item, fromVars, toVars);
     });
   }, [enableScrollAnimation, animationDelay]);
 

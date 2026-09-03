@@ -32,16 +32,27 @@ export const useProgressStepsAnimation = (options: UseProgressStepsAnimationOpti
     scrollTriggerOptions = {
       start: 'top 80%',
       end: 'bottom 20%',
-      toggleActions: 'play none none reverse',
+      toggleActions: 'play none none none',
     },
   } = options;
 
   const containerRef = useRef<HTMLDivElement>(null);
+  const hasAnimatedRef = useRef(false);
 
   useGSAP(
     () => {
-      const progressLines = containerRef.current?.querySelectorAll('.progress-line');
+      const container = containerRef.current;
+      if (!container) {
+        return;
+      }
+
+      const progressLines = container.querySelectorAll('.progress-line');
       if (!progressLines || progressLines.length === 0) {
+        return;
+      }
+
+      if (hasAnimatedRef.current) {
+        gsap.set(progressLines, { width: '100%' });
         return;
       }
 
@@ -51,14 +62,17 @@ export const useProgressStepsAnimation = (options: UseProgressStepsAnimationOpti
       if (triggerOnScroll) {
         // Create timeline for sequential animation with scroll trigger
         const progressTimeline = gsap.timeline({
-          delay: delay,
+          delay,
           scrollTrigger: {
-            trigger: containerRef.current,
-            start: scrollTriggerOptions.start,
-            end: scrollTriggerOptions.end,
-            toggleActions: scrollTriggerOptions.toggleActions,
-            invalidateOnRefresh: true, // Refresh on window resize/reload
-            refreshPriority: -1, // Lower priority to ensure proper initialization
+            trigger: container,
+            start: scrollTriggerOptions.start || 'top 80%',
+            end: scrollTriggerOptions.end || 'bottom 20%',
+            once: true,
+            toggleActions: 'play none none none',
+            invalidateOnRefresh: true,
+          },
+          onComplete: () => {
+            hasAnimatedRef.current = true;
           },
         });
 
@@ -68,16 +82,19 @@ export const useProgressStepsAnimation = (options: UseProgressStepsAnimationOpti
             line,
             {
               width: '100%',
-              duration: duration,
-              ease: ease,
+              duration,
+              ease,
             },
-            index * delayBetweenSteps, // Each animation starts after the previous one completes
+            index * delayBetweenSteps,
           );
         });
       } else {
         // Animate immediately without scroll trigger
         const progressTimeline = gsap.timeline({
-          delay: delay,
+          delay,
+          onComplete: () => {
+            hasAnimatedRef.current = true;
+          },
         });
 
         progressLines.forEach((line, index) => {
@@ -85,26 +102,17 @@ export const useProgressStepsAnimation = (options: UseProgressStepsAnimationOpti
             line,
             {
               width: '100%',
-              duration: duration,
-              ease: ease,
+              duration,
+              ease,
             },
             index * delayBetweenSteps,
           );
         });
       }
-
-      // Cleanup function
-      return () => {
-        ScrollTrigger.getAll().forEach((trigger) => {
-          if (trigger.trigger === containerRef.current) {
-            trigger.kill();
-          }
-        });
-      };
     },
     {
       scope: containerRef,
-      dependencies: [delay, duration, delayBetweenSteps, ease, triggerOnScroll], // Re-run when options change
+      dependencies: [delay, duration, delayBetweenSteps, ease, triggerOnScroll],
     },
   );
 

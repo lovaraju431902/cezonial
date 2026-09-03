@@ -23,14 +23,12 @@ const FaqTab = () => {
             </RevealAnimation>
           </div>
         </div>
-        <RevealAnimation delay={0.5}>
-          <div className="py-[70px]">
-            <TabProvider defaultValue={0}>
-              <FaqTabList />
-              <FaqTabContent />
-            </TabProvider>
-          </div>
-        </RevealAnimation>
+        <div className="py-[70px]">
+          <TabProvider defaultValue={0}>
+            <FaqTabList />
+            <FaqTabContent />
+          </TabProvider>
+        </div>
       </div>
     </section>
   );
