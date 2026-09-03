@@ -13,13 +13,13 @@ const VisionStatement = () => {
             <span className="badge badge-cyan mb-5">Passion meets purpose</span>
           </RevealAnimation>
           <RevealAnimation delay={0.2} instant>
-            <h2>NextSaaS is defining the future landscape of business.</h2>
+            <h2>Cezonal Solutions is defining the future landscape of business.</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.3} instant>
             <p>
-              In a rapidly evolving digital world, NextSaaS stands at the forefront of innovation, transforming how
-              businesses operate, connect, and grow.By delivering intelligent, scalable, and user-focused SaaS
-              solutions,
+              In a rapidly evolving digital world, Cezonal Solutions Pvt Ltd stands at the forefront of innovation,
+              transforming how businesses operate, connect, and grow by delivering intelligent, scalable, and
+              user-focused software &amp; app solutions.
             </p>
           </RevealAnimation>
         </div>

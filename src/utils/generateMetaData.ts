@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
-export const DEFAULT_URL = 'https://next-saas-next.vercel.app/';
-export const DEFAULT_TITLE = 'NextSaaS - Software, SaaS & Startup Tailwind Template';
+export const DEFAULT_URL = 'https://cezonial.com/';
+export const DEFAULT_TITLE = 'Cezonal Solutions Pvt Ltd - Mobile & Web App Development';
 export const DEFAULT_DESCRIPTION =
-  'NextSaaS - the ultimate collection of 38+ premium HTML templates for SaaS businesses and startups. Built with Tailwind CSS, featuring responsive design, authentication flows, pricing pages, and modern UI components. Perfect for web applications and digital products.';
+  'Cezonal Solutions Pvt Ltd is a premier software development agency delivering high-performance mobile apps, web applications, and custom enterprise software solutions.';
 export const DEFAULT_IMAGE_URL = 'https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg';
 
 const defaultMetadata: Metadata = {
@@ -12,7 +12,7 @@ const defaultMetadata: Metadata = {
   description: DEFAULT_DESCRIPTION,
   openGraph: {
     type: 'website',
-    siteName: 'NextSaaS',
+    siteName: 'Cezonal Solutions Pvt Ltd',
     url: DEFAULT_URL,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,

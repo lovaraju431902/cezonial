@@ -17,26 +17,26 @@ type CompanyLink = {
 const companyLinks: CompanyLink[] = [
   {
     title: 'About Us',
-    description: 'Learn about our mission, values, and dedicated team',
+    description: 'Learn about our mission, vision, and core team',
     href: '/about',
     icon: AboutIcon,
   },
   {
     title: 'Our Services',
-    description: 'Explore our comprehensive hosting solutions',
+    description: 'Custom mobile and web application development',
     href: '/services',
     icon: ServiceIcon,
   },
   {
-    title: 'Product Features',
-    description: 'Discover powerful tools and capabilities',
-    href: '/features',
+    title: 'Our Process',
+    description: 'From discovery to app store & cloud deployment',
+    href: '/process',
     icon: FeatureIcon,
   },
   {
-    title: 'Blog & News',
-    description: 'Stay updated with latest articles and insights',
-    href: '/blog',
+    title: 'Client Case Studies',
+    description: 'Explore our portfolio and proven project results',
+    href: '/case-study',
     icon: BlogIcon,
   },
 ];
@@ -72,18 +72,19 @@ const CompanyMenu = ({
           ))}
         </ul>
         <figure className="flex-1 space-y-3">
-          <p className="text-tagline-2 text-secondary/60 dark:text-accent/60 font-medium">What's New</p>
-          <Link href="/blog" className="block">
+          <p className="text-tagline-2 text-secondary/60 dark:text-accent/60 font-medium">Why Cezonal</p>
+          <Link href="/about" onClick={handleClose} className="block">
             <figure className="group relative min-h-[272px] w-full max-w-full overflow-hidden rounded-[14px]">
               <Image
                 src={nsImg419}
-                alt="What's New"
+                alt="Cezonal Solutions"
                 className="h-full w-full rounded-[14px] object-cover transition-all duration-500 ease-in-out group-hover:scale-105"
               />
-              <div className="absolute top-4 left-4 size-full space-y-1 transition-all duration-500 ease-in-out group-hover:top-5 group-hover:left-5">
-                <p className="text-tagline-1 font-medium text-white">Web Hosting</p>
-                <p className="text-tagline-3 w-full max-w-[212px] font-normal text-white/60">
-                  Web Hosting is a platform that allows you to host your website online.
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-[14px]" />
+              <div className="absolute bottom-4 left-4 right-4 space-y-1">
+                <p className="text-tagline-1 font-semibold text-white">Cezonal Solutions Pvt Ltd</p>
+                <p className="text-tagline-3 w-full font-normal text-white/80">
+                  Building next-generation digital products, high-performance apps, and enterprise software.
                 </p>
               </div>
             </figure>

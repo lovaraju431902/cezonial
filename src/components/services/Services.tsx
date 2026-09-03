@@ -15,12 +15,12 @@ const Services = () => {
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2} instant>
-              <h2 className="mx-auto max-w-[878px]">Leading companies around the globe rely on nexSaas.</h2>
+              <h2 className="mx-auto max-w-[878px]">Leading companies around the globe rely on Cezonal Solutions.</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3} instant>
               <p className="mx-auto max-w-[700px]">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not
-                Latin, though it looks like it, and it actually has no meaning.
+                We deliver robust, high-performance web applications and mobile solutions designed to accelerate
+                your business growth.
               </p>
             </RevealAnimation>
           </div>

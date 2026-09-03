@@ -13,7 +13,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'App Development - NextSaaS',
+  title: 'Cezonal Solutions Pvt Ltd - Mobile & Web App Development',
 };
 
 const page = () => {
